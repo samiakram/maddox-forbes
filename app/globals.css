@@ -2,32 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+/* use variables */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --r-blue: #072b61;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Amasis";
+  src: url("/fonts/AmasisMTW1G.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "felix";
+  src: url("/fonts/FELIXTI.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "cali";
+  src: url("/fonts/Californian FB Regular.ttf") format("truetype");
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+p {
+  font-family: "amasis", sans;
 }
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "felix", sans;
+  font-weight: bold;
+  color: var(--r-blue);
+}
+
+/* Add custom bullet for all li elements */
+/* li::before {
+  content: "•"; 
+  margin-right: 0.1em;
+  padding-bottom: 0.2rem;
+} */
+
+/* Remove bullet for the first li element */
+/* li:first-child::before {
+  content: none; 
+} */
