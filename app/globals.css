@@ -26,31 +26,9 @@ body {
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 p {
   font-family: "amasis", sans;
 }
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "felix", sans;
-  font-weight: bold;
-  color: var(--r-blue);
-}
-
-/* Add custom bullet for all li elements */
-/* li::before {
-  content: "•"; 
-  margin-right: 0.1em;
-  padding-bottom: 0.2rem;
-} */
-
-/* Remove bullet for the first li element */
-/* li:first-child::before {
-  content: none; 
-} */
