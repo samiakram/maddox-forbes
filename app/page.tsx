@@ -1,91 +1,99 @@
 "use client";
 
+import React from "react";
+import Nav from "./nav";
+
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Slide from "./slide";
+import SlidingInComponent from "./SlidingIn";
 
 export default function Home() {
-  let path = usePathname();
-
-  if (path === "/") {
-    path = "About";
-  }
-
-  const internal_links = [
-    {
-      name: "About",
-      href: "/",
-    },
-    {
-      name: "Loan Programs",
-      href: "/loan-programs",
-    },
-    {
-      name: "New Builds",
-      href: "/new-builds",
-    },
-  ];
-
-  const external_links = [
-    {
-      name: "Realtor Portal",
-      href: "/realtor-portal",
-    },
-    {
-      name: "Builder Portal",
-      href: "/builder-portal",
-    },
-    {
-      name: "Apply Now",
-      href: "/apply-now",
-    },
-  ];
-
   return (
-    <main className="bg-[rgba(0,0,0,0.8)] w-full h-screen pt-36 flex items-center justify-center">
-      <section className="container md:p-0 p-5 flex flex-col gap-4 mx-auto text-off-white">
-        <Slide>
-          <h1 className="text-3xl font-bold w-full">About</h1>
-        </Slide>
-        <div>
-          <Slide delay={0.2}>
-            <p className="text-xl">
-              Welcome to Maddox Forbes your local Loan and investment financing
-              experts.
-            </p>
-          </Slide>
-          <Slide delay={0.4}>
-            <p className="text-lg">
-              We pride ourselves in providing contemporary loan solutions for
+    <main className="">
+      <section
+        id="hero"
+        className="pt-6 "
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bgImage.jpg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          height: "auto",
+          minHeight: "100vh",
+        }}
+      >
+        <Nav />
+        <div className="hidden md:block md:absolute z-0 top-0 left-0 right-0 bottom-0">
+          <Image
+            src={"/images/mf logo.png"}
+            width={300}
+            height={300}
+            alt="Maddox Forbes Logo"
+            className="object-contain absolute bottom-0"
+          />
+          <Image
+            src={"/images/bf logo.png"}
+            width={300}
+            height={300}
+            alt="BF Logo"
+            className="object-contain absolute bottom-0 right-0"
+          />
+        </div>
+        <div className="container relative z-0 mx-auto flex flex-col gap-10 w-3/4 items-center justify-center mt-40 text-primaryWhite">
+          <SlidingInComponent delay={0}>
+            <h3 className="text-center text-base md:text-lg tracking-[5px]">
+              Welcome to Maddox Forbes.
+            </h3>
+          </SlidingInComponent>
+          <SlidingInComponent delay={0.2}>
+            <p className="text-2xl md:text-3xl text-center">
+              Your local loan and investment financing experts. We pride
+              ourselves in providing contemporary loan solutions for
               residential, investment, and commercial buyers by accessing the
-              most comprehensive and competitive wholesale investors ni the
+              most comprehensive and competitive wholesale investors in the
               mortgage industry.
             </p>
-          </Slide>
+          </SlidingInComponent>
+          <SlidingInComponent delay={0.4}>
+            <button className="px-4 py-2 bg-navy hover:bg-primaryWhite text-primaryWhite hover:text-navy hover:border-navy transition-all duration-300 ease-in-out">
+              CTA Button
+            </button>
+          </SlidingInComponent>
         </div>
-        <Slide
-          delay={0.6}
-          classNmae="flex flex-col md:flex-row justify-center items-center  gap-4 mt-4 "
-        >
-          <div className="relative p-4 w-full h-28 flex flex-col justify-center bg-off-white  cursor-pointer text-r-blue  shadow-xl group ">
-            <h3 className="italic  mb-2 transition-all duration-300 absolute top-3">
+      </section>
+      <section className="bg-navy px-4 md:px-0">
+        <div className="container mx-auto flex flex-col gap-6 text-primaryWhite py-20">
+          <SlidingInComponent delay={0}>
+            <h3 className="uppercase tracking-[5px] text-base md:text-lg">
               Purchasing Power
-              <span className="ease absolute left-0 -bottom-0.5 h-0 w-0 border-t-2 border-r-blue transition-all duration-1000 group-hover:w-full"></span>
             </h3>
-
-            <p className="font-bold text-xl group-hover:text-2xl pt-8 transition-all duration-300 relative">
-              Set yourself up for success & shop with confidence
-            </p>
+          </SlidingInComponent>
+          <div className="flex md:flex-row flex-col gap-4 justify-center items-center ">
+            <SlidingInComponent delay={0.2}>
+              <div className="md:text-4xl text-2xl tracking-widest text-left w-full font-[felix] ">
+                Set yourself up for success & shop with confidence
+              </div>
+            </SlidingInComponent>
+            <div className="flex flex-col gap-6">
+              <SlidingInComponent delay={0.4}>
+                <div className="w-full text-base text-[amasis]">
+                  Whether you are looking to buy your first home or expand your
+                  real estate portfolio, our experts have decades of experience
+                  in tailoring the loan experience to each individual buyer.
+                  Please let us know if you would like a mortgage concierge to
+                  reach out directly to begin the loan process or simply answer
+                  your questions.
+                </div>
+              </SlidingInComponent>
+              <SlidingInComponent delay={0.6}>
+                <button className="px-4 py-2 bg-primaryWhite hover:bg-navy text-navy hover:text-primaryWhite border-transparent border hover:border-primaryWhite transition-all duration-300 ease-in-out ">
+                  CTA Button
+                </button>
+              </SlidingInComponent>
+            </div>
           </div>
-          <div className="text-lg">
-            Whether you are looking to buy your first home or expand your real
-            estate portfolio, our experts have decades of experience in
-            tailoring the loan experience to each individual buyer. Please let
-            us know fi you would like amortgage concierge to reach out directly
-            to begin the loan process or simply answer your questions.
-          </div>
-        </Slide>
+        </div>
       </section>
     </main>
   );

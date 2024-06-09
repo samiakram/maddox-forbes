@@ -4,7 +4,8 @@
 
 /* use variables */
 :root {
-  --r-blue: #072b61;
+  --navy: #072b61;
+  --primaryWhite: "#f6f6f6";
 }
 
 @font-face {
@@ -15,20 +16,50 @@
 @font-face {
   font-family: "felix";
   src: url("/fonts/FELIXTI.TTF") format("truetype");
+  font-weight: normal;
 }
-
 @font-face {
   font-family: "cali";
   src: url("/fonts/Californian FB Regular.ttf") format("truetype");
 }
 
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; /* Ensure text alignment is centered */
+  /* Add vertical centering if needed */
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
-  background-image: url("/images/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+a {
+  font-family: "felix", sans-serif;
+  font-weight: bold;
+}
+
+h3,
+h4,
+h5 {
+  font-family: "felix";
+  letter-spacing: 5px;
+  font-weight: bold;
 }
 
 p {
-  font-family: "amasis", sans;
+  font-family: "cali";
 }

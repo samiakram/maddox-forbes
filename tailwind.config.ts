@@ -9,8 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "r-blue": "#072B61",
+        navy: "#072B61",
         "off-white": "#FFFDEB",
+        primaryWhite: "#f6f6f6",
+
+        // lightBlue: "#3da5d9",
+        lightBlue: "#58B8E7",
       },
     },
   },

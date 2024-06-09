@@ -1,196 +1,158 @@
-"use client";
-
-import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
-
-import { GiHamburgerMenu } from "react-icons/gi";
-
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-
-function RenderLinks({
-  links,
-  path,
-}: {
-  links: { name: string; href: string }[];
-  path: string;
-}) {
-  return (
-    <ul className="flex  flex-col md:flex-row md:items-center justify-between gap-2 ">
-      {links.map((link) => (
-        <li
-          className={`flex items-center pl-2 ${
-            path === link.href ? "font-bold " : ""
-          }`}
-          key={link.href}
-        >
-          <Link
-            href={link.href}
-            className="relative group transition-all duration-300"
-          >
-            {link.name}
-            <span className="ease absolute left-0 bottom-0 h-0 w-0 border-t-2 border-r-blue transition-all duration-500 group-hover:w-full"></span>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-}
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { internalLinks, socialLinks } from "./data";
 
 export default function Nav() {
-  const [isOpen, setIsOpen] = useState(false);
-  const sideNavRef = useRef<HTMLDivElement>(null);
-
-  let path = usePathname();
-
-  const internal_links = [
-    {
-      name: "About",
-      href: "/",
-    },
-    {
-      name: "Loan Programs",
-      href: "/loan-programs",
-    },
-    {
-      name: "New Builds",
-      href: "/new-builds",
-    },
-  ];
-
-  const external_links = [
-    {
-      name: "Realtor Portal",
-      href: "/realtor-portal",
-    },
-    {
-      name: "Builder Portal",
-      href: "/builder-portal",
-    },
-    {
-      name: "Apply Now",
-      href: "/apply-now",
-    },
-  ];
+  const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (!sideNavRef.current) return;
-      if (isOpen && !sideNavRef.current.contains(e.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
+    if (showNav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.body.style.overflow = "auto";
     };
-  }, [isOpen]);
+  }, [showNav]);
+
+  const menuVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, staggerChildren: 0.1 },
+    },
+  };
+
+  const linkVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  };
+
+  const socialLinkVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  };
 
   return (
-    <>
-      {isOpen && (
-        <div className="bg-[rgba(0,0,0,0.8)] w-screen h-screen fixed z-50"></div>
-      )}
-      <aside
-        ref={sideNavRef}
-        className="md:hidden flex-col flex h-screen w-52 z-50 fixed  top-0 bg-off-white  p-5 transition-all duration-300 ease-in"
-        style={{
-          left: isOpen ? "0" : "-100%",
-        }}
-      >
-        <div className="w-full flex justify-end " onClick={() => {}}>
+    <nav className="h-14 z-10 px-4 md:px-0 text-primaryWhite relative container mx-auto  w-full flex flex-col md:flex-row items-center justify-between">
+      {!showNav && (
+        <button
+          onClick={() => setShowNav(true)}
+          className="absolute md:hidden left-8 top-4 text-primaryWhite"
+        >
           <IconContext.Provider value={{ size: "1.5em" }}>
-            <div
-              onClick={() => {
-                setIsOpen(false);
-              }}
-            >
-              <IoClose />
-            </div>
+            <AiOutlineMenu />
           </IconContext.Provider>
-        </div>
-        <div className="flex flex-col gap-2">
-          <RenderLinks links={internal_links} path={path} />
-          <RenderLinks links={external_links} path={path} />
-        </div>
-      </aside>
-      <nav className="flex bg-off-white absolute w-full  flex-col divide-y  shadow-xl">
-        <div className="container p-3 md:p-0 mx-auto flex items-center my-2 justify-between">
-          <div className="relative w-[150px] h-[50px] md:w-[300px] md:h-[80px]">
-            <Image src={"/images/mf logo.png"} alt="logo" layout="fill" />
-          </div>
-          <IconContext.Provider
-            value={{
-              size: "1.5em",
-              className: "z-50 block md:hidden",
-              color: "#072B61",
-            }}
+        </button>
+      )}
+      {showNav && (
+        <button
+          className="absolute left-8 top-4 z-30"
+          onClick={() => setShowNav(false)}
+        >
+          <IconContext.Provider value={{ size: "1.5em", color: "#072B61" }}>
+            <AiOutlineClose />
+          </IconContext.Provider>
+        </button>
+      )}
+      {showNav && (
+        <motion.div
+          className="fixed z-20 flex items-center pt-36 flex-col left-0 right-0 bottom-0 top-0 bg-off-white text-navy"
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={menuVariants}
+        >
+          <motion.ul
+            className="flex items-center text-md flex-col gap-6 p-6"
+            variants={menuVariants}
           >
-            <div
-              style={{
-                display: isOpen ? "none" : "block",
-              }}
-              onClick={() => {
-                setIsOpen(true);
-              }}
-            >
-              <GiHamburgerMenu />
+            {internalLinks.map((link, index) => (
+              <motion.li
+                key={index}
+                className="relative group"
+                variants={linkVariants}
+                whileHover={{ scale: 1.1 }}
+              >
+                <a href={link.url || "#"}>
+                  {link.text}
+                  <span className="absolute border-t-2 border-t-navy w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
+                </a>
+              </motion.li>
+            ))}
+          </motion.ul>
+          <motion.ul className="flex gap-6 z-10 p-6" variants={menuVariants}>
+            {socialLinks.map((social) => (
+              <motion.li key={social.id} variants={socialLinkVariants}>
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primaryWhite"
+                >
+                  <IconContext.Provider
+                    value={{ size: "1.5em", color: "#072B61" }}
+                  >
+                    <social.icon />
+                  </IconContext.Provider>
+                </a>
+              </motion.li>
+            ))}
+          </motion.ul>
+          <a href="">
+            <div className=" px-4 py-2 border transition-all duration-300 ease-in-out border-navy text-navy hover:bg-navy hover:text-primaryWhite">
+              <span className="">Contact?</span>
             </div>
-          </IconContext.Provider>
-          <div className="relative w-[150px] h-[50px] md:w-[300px] md:h-[80px]">
-            <Image
-              src={"/images/bf logo.png"}
-              className=""
-              alt="logo"
-              layout="fill"
-            />
-          </div>
-        </div>
-        <div className="py-2 hidden md:flex">
-          <div className="flex items-center justify-between container mx-auto text-sm text-r-blue">
-            <ul className="flex items-center  justify-between gap-2 ">
-              {internal_links.map((link) => (
-                <li
-                  className={`flex items-center pl-2 ${
-                    path === link.href ? "font-bold " : ""
-                  }`}
-                  key={link.href}
-                >
-                  <Link
-                    href={link.href}
-                    className="relative group  transition-all duration-300"
-                  >
-                    {link.name}
-                    <span className="ease absolute left-0 bottom-0 h-0 w-0 border-t-2 border-r-blue transition-all duration-500 group-hover:w-full"></span>
-                  </Link>
+          </a>
+        </motion.div>
+      )}
+      <ul className="gap-6 hidden md:flex items-center relative z-10">
+        {internalLinks.map((link) => {
+          return (
+            <>
+              <a href="">
+                <li className="relative group w-min xl:w-auto text-center xl:text-left">
+                  <span className="">{link.text}</span>
+                  <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
                 </li>
-              ))}
-            </ul>
-
-            <ul className="flex items-center justify-between gap-2 ">
-              {external_links.map((link) => (
-                <li
-                  className={`flex items-center pl-2 ${
-                    path === link.href ? "font-bold " : ""
-                  }`}
-                  key={link.href}
-                >
-                  <Link
-                    href={link.href}
-                    className="relative group transition-all duration-300"
-                  >
-                    {link.name}
-                    <span className="ease absolute left-0 bottom-0 h-0 w-0 border-t-2 border-r-blue transition-all duration-500 group-hover:w-full"></span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </>
+              </a>
+            </>
+          );
+        })}
+      </ul>
+      <h3
+        className={`absolute-center text-3xl z-20 ${
+          showNav ? "text-navy" : ""
+        }`}
+      >
+        <a href="/"> Maddox Forbes</a>
+      </h3>
+      <ul className="hidden md:flex gap-6 z-10">
+        {socialLinks.map((social) => (
+          <li key={social.id}>
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primaryWhite"
+            >
+              <IconContext.Provider value={{ size: "1.5em" }}>
+                <social.icon />
+              </IconContext.Provider>
+            </a>
+          </li>
+        ))}
+        <a href="">
+          <li className="relative group w-min xl:w-auto text-center xl:text-left">
+            <span className="">Contact?</span>
+            <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
+          </li>
+        </a>
+      </ul>
+    </nav>
   );
 }
