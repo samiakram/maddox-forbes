@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 type SlidingInComponentProps = {
   children: React.ReactNode;
+  class?: string; // optional prop to add custom classes
   direction?: "left" | "right" | "up" | "down"; // optional prop to specify slide direction
   offset?: number; // optional prop to control animation start point
   duration?: number; // optional prop to control animation duration
@@ -13,8 +14,9 @@ type SlidingInComponentProps = {
 
 const SlidingInComponent: React.FC<SlidingInComponentProps> = ({
   children,
+  class: className,
   direction = "down",
-  offset = 100,
+  offset = 30,
   duration = 0.5,
   delay = 0,
 }) => {
@@ -52,6 +54,7 @@ const SlidingInComponent: React.FC<SlidingInComponentProps> = ({
   return (
     <motion.div
       ref={ref}
+      className={className}
       initial="hidden"
       animate={controls}
       variants={variants}
