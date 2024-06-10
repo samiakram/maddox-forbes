@@ -218,10 +218,10 @@ export default function Home() {
                 background in Business Management, pursuing finance was a
                 natural next step. She worked on the Chicago Mercantile
                 Exchange, before also working in the family business of
-                construction and development. Taylor's why is her family and
-                farm, which includes her three children, husband, and far too
-                many animals. She is a momma bear for her kids, and one you want
-                fighting in your financial corner.
+                construction and development. Taylor&apos;s why is her family
+                and farm, which includes her three children, husband, and far
+                too many animals. She is a momma bear for her kids, and one you
+                want fighting in your financial corner.
               </p>
             </SlidingInComponent>
           </div>
