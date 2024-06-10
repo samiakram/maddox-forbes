@@ -78,7 +78,7 @@ export default function Home() {
             </SlidingInComponent>
             <div className="flex   flex-col gap-6">
               <SlidingInComponent delay={0.4} class="">
-                <div className="w-full text-base text-[amasis]">
+                <div className="w-full text-base ">
                   Whether you are looking to buy your first home or expand your
                   real estate portfolio, our experts have decades of experience
                   in tailoring the loan experience to each individual buyer.
@@ -108,7 +108,7 @@ export default function Home() {
               delay={0.4}
               class={"flex items-start md:items-center justify-center"}
             >
-              <div className="text-base text-left md:text-center   text-[amasis]">
+              <div className="text-base text-left md:text-center   ">
                 Maddox forbes is a boutique mortgage brokerage powered by
                 Barrett Financial Group. Excellence is our standard, surpassing
                 it is our mission. Our brokers and advisors are passionate about
