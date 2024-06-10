@@ -43,12 +43,12 @@ export default function Home() {
         </div>
         <div className="container relative z-0 mx-auto flex flex-col gap-10 w-3/4 items-center justify-center mt-40 text-primaryWhite">
           <SlidingInComponent delay={0}>
-            <h3 className="text-center text-base md:text-lg tracking-[5px]">
+            <h1 className="text-center text-base md:text-lg tracking-[5px]">
               Welcome to Maddox Forbes.
-            </h3>
+            </h1>
           </SlidingInComponent>
           <SlidingInComponent delay={0.2}>
-            <p className="text-2xl md:text-3xl text-center">
+            <p className="text-xl md:text-2xl text-center">
               Your local loan and investment financing experts. We pride
               ourselves in providing contemporary loan solutions for
               residential, investment, and commercial buyers by accessing the
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
       <section className="bg-navy px-4 md:px-0">
         <div className="container  mx-auto flex items-center flex-col gap-6 text-primaryWhite py-20">
-          <SlidingInComponent delay={0}>
+          <SlidingInComponent delay={0} class="">
             <h3 className="uppercase  tracking-[5px] text-base md:text-lg">
               Purchasing Power
             </h3>
@@ -109,12 +109,11 @@ export default function Home() {
               class={"flex items-start md:items-center justify-center"}
             >
               <div className="text-base text-left md:text-center   text-[amasis]">
-                Whether you are looking to buy your first home or expand your
-                real estate portfolio, our experts have decades of experience in
-                tailoring the loan experience to each individual buyer. Please
-                let us know if you would like a mortgage concierge to reach out
-                directly to begin the loan process or simply answer your
-                questions.
+                Maddox forbes is a boutique mortgage brokerage powered by
+                Barrett Financial Group. Excellence is our standard, surpassing
+                it is our mission. Our brokers and advisors are passionate about
+                their craft and deeply committed to exceeding every buyer's
+                expectation.
               </div>
             </SlidingInComponent>
             <SlidingInComponent delay={0.6} class="">

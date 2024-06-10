@@ -47,19 +47,23 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
-a {
-  font-family: "felix", sans-serif;
-  font-weight: bold;
+a,
+h1,
+h2 {
+  font-family: "felix";
 }
 
 h3,
 h4,
 h5 {
-  font-family: "felix";
+  font-family: "amasis";
   letter-spacing: 5px;
   font-weight: bold;
 }
 
-p {
+button,
+div,
+p,
+span {
   font-family: "cali";
 }
