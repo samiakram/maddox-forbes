@@ -46,7 +46,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
+li,
 a,
 h1,
 h2 {

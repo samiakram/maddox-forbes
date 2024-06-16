@@ -12,9 +12,8 @@ const config: Config = {
         navy: "#072B61",
         "off-white": "#FFFDEB",
         primaryWhite: "#f6f6f6",
-
-        // lightBlue: "#3da5d9",
-        lightBlue: "#58B8E7",
+        lightBlue: "#677b96",
+        grey: "#aebac8",
       },
     },
   },

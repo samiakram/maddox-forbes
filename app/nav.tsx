@@ -78,7 +78,7 @@ export default function Nav() {
                 variants={linkVariants}
                 whileHover={{ scale: 1.1 }}
               >
-                <a href={link.url || "#"}>
+                <a href={link.url}>
                   {link.text}
                   <span className="absolute border-t-2 border-t-navy w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
                 </a>
@@ -114,7 +114,7 @@ export default function Nav() {
         {internalLinks.map((link) => {
           return (
             <>
-              <a href="">
+              <a href={link.url}>
                 <li className="relative group w-min xl:w-auto text-center xl:text-left">
                   <span className="">{link.text}</span>
                   <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>

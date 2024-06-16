@@ -17,7 +17,7 @@ interface SocialLink {
 export const internalLinks: Link[] = [
   {
     id: 1,
-    url: "/",
+    url: "#about",
     text: "About",
   },
   {
