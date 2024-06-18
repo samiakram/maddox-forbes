@@ -110,8 +110,8 @@ export default function Home() {
                 Maddox forbes is a boutique mortgage brokerage powered by
                 Barrett Financial Group. Excellence is our standard, surpassing
                 it is our mission. Our brokers and advisors are passionate about
-                their craft and deeply committed to exceeding every buyer's
-                expectation.
+                their craft and deeply committed to exceeding every buyer &apos
+                s expectation.
               </div>
             </SlidingInComponent>
           </div>
