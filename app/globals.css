@@ -46,24 +46,22 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-li,
-a,
+
 h1,
 h2 {
-  font-family: "felix";
+  font-family: "Amasis", sans-serif;
 }
 
+li,
+a,
 h3,
 h4,
 h5 {
-  font-family: "amasis";
-  letter-spacing: 5px;
-  font-weight: bold;
+  font-family: "felix", sans-serif;
 }
 
 button,
-div,
 p,
 span {
-  font-family: "cali";
+  font-family: "cali", sans-serif;
 }

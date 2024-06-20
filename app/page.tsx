@@ -43,76 +43,74 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="bg-navy text-off-white px-4 md:px-0" id="about">
-        <div className="mx-auto container flex flex-col gap-8 py-20 items-center justify-center">
-          <SlidingInComponent delay={0}>
-            <h1 className="text-center text-base md:text-lg tracking-[5px]">
-              Welcome to Maddox Forbes
-            </h1>
-          </SlidingInComponent>
-          <SlidingInComponent delay={0.2} class="w-3/4">
-            <p className="text-xl md:text-2xl text-center">
-              Your local loan and investment financing experts. We pride
-              ourselves in providing contemporary loan solutions for
-              residential, investment, and commercial buyers by accessing the
-              most comprehensive and competitive wholesale investors in the
-              mortgage industry.
-            </p>
-          </SlidingInComponent>
-        </div>
-      </section>
-      <section className="bg-navy px-4 md:px-0">
-        <div className="container  mx-auto flex items-center flex-col gap-6 text-off-white py-20">
+      <section
+        className="bg-navy py-5 flex items-center justify-center text-offWhite px-4 md:px-0"
+        id="about"
+      >
+        <div className="container mx-auto py-20 flex flex-col items-center justify-center">
           <SlidingInComponent delay={0} class="">
-            <h1 className="uppercase tracking-[5px] text-base md:text-lg">
-              Purchasing Power
+            <h1 className="text-2xl">
+              Welcome to Maddox Forbes your local Loan and investment financing
+              experts
             </h1>
           </SlidingInComponent>
-          <div className="flex  w-3/4 md:flex-row flex-col gap-4 justify-center items-center ">
+          <div className="flex gap-4 my-10 flex-col w-3/4">
             <SlidingInComponent delay={0.2}>
-              <div className="md:text-4xl grow-0 text-2xl tracking-widest text-left w-full font-[felix] ">
-                Set yourself up for success & shop with confidence
-              </div>
+              <h3 className="tracking-[5px] text-lg">Purchasing Power</h3>
             </SlidingInComponent>
-            <div className="flex flex-col gap-6">
-              <SlidingInComponent delay={0.4} class="">
-                <div className="w-full text-lg">
+            <SlidingInComponent
+              delay={0.4}
+              class="flex flex-row gap-2  items-start justify-center"
+            >
+              <div className="w-full h-full flex flex-col items-center justify-center ">
+                <h5 className="text-4xl">
+                  SET YOURSELF UP FOR SUCCESS & SHOP WITH CONFIDENCE
+                </h5>
+              </div>
+              <div className="w-full text-lg flex flex-col gap-2 ">
+                <p>
+                  We pride ourselves in providing contemporary loan solutions
+                  for residential, investment, and commercial buyers by
+                  accessing the most comprehensive and competitive wholesale
+                  investors in the mortgage industry.
+                </p>
+                <p>
+                  {" "}
                   Whether you are looking to buy your first home or expand your
                   real estate portfolio, our experts have decades of experience
                   in tailoring the loan experience to each individual buyer.
                   Please let us know if you would like a mortgage concierge to
                   reach out directly to begin the loan process or simply answer
                   your questions.
-                </div>
-              </SlidingInComponent>
-              {/* <SlidingInComponent delay={0.6}>
-                <button className="px-4 py-2 bg-primaryWhite hover:bg-navy text-navy hover:text-primaryWhite border-transparent border hover:border-primaryWhite transition-all duration-300 ease-in-out ">
+                </p>
+                <button className="px-4 w-max py-1 bg-offWhite border border-transparent mt-2 text-navy transition-all duration-300 ease-in-out hover:border hover:border-offWhite hover:text-offWhite hover:bg-navy">
                   CTA Button
                 </button>
-              </SlidingInComponent> */}
-            </div>
+              </div>
+            </SlidingInComponent>
           </div>
         </div>
       </section>
-      <section className="bg-blue-300 text-navy px-4 md:px-0">
+
+      <section className="bg-grey text-navy px-4 md:px-0">
         <div className="container mx-auto flex flex-col items-center gap-6 text-center py-20">
           <SlidingInComponent delay={0}>
-            <h3 className="uppercase tracking-[5px] text-base md:text-lg">
+            <h1 className="tracking-wider text-2xl md:text-2xl">
               What we stand for
-            </h3>
+            </h1>
           </SlidingInComponent>
-          <div className="flex flex-col gap-6 md:w-1/2 w-3/4  justify-center items-start md:items-center">
+          <div className="flex flex-col gap-6 md:w-3/4 w-3/4  justify-center items-start md:items-center">
             <SlidingInComponent
               delay={0.4}
               class={"flex items-start md:items-center justify-center"}
             >
-              <div className=" text-left md:text-center  text-lg ">
+              <p className="text-left md:text-center  text-lg">
                 Maddox forbes is a boutique mortgage brokerage powered by
                 Barrett Financial Group. Excellence is our standard, surpassing
                 it is our mission. Our brokers and advisors are passionate about
-                their craft and deeply committed to exceeding every buyer &apos
-                s expectation.
-              </div>
+                their craft and deeply committed to exceeding every buyer&apos;s
+                expectation.
+              </p>
             </SlidingInComponent>
           </div>
         </div>
