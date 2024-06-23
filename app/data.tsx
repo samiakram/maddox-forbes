@@ -22,7 +22,7 @@ export const internalLinks: Link[] = [
   },
   {
     id: 2,
-    url: "/loan-programs",
+    url: "#loan-programs",
     text: "Loan Programs",
   },
   {

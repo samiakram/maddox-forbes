@@ -61,7 +61,7 @@ export default function Nav() {
       )}
       {showNav && (
         <motion.div
-          className="fixed z-20 flex items-center pt-36 flex-col left-0 right-0 bottom-0 top-0 bg-off-white text-navy"
+          className="fixed z-20 flex items-center pt-36 flex-col left-0 right-0 bottom-0 top-0 bg-offWhite text-navy"
           initial="hidden"
           animate="visible"
           exit="hidden"
@@ -77,6 +77,7 @@ export default function Nav() {
                 className="relative group"
                 variants={linkVariants}
                 whileHover={{ scale: 1.1 }}
+                onClick={() => setShowNav(false)}
               >
                 <a href={link.url}>
                   {link.text}

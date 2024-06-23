@@ -44,30 +44,35 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="bg-navy py-5 flex items-center justify-center text-offWhite px-4 md:px-0"
+        className="bg-navy py-5 flex items-center justify-center text-offWhite px-8 md:px-0"
         id="about"
       >
         <div className="container mx-auto py-20 flex flex-col items-center justify-center">
-          <SlidingInComponent delay={0} class="">
-            <h1 className="text-2xl">
+          <SlidingInComponent delay={0} class="mb-10">
+            <h1 className="text-2xl">About</h1>
+          </SlidingInComponent>
+          <SlidingInComponent delay={0.2} class="">
+            <p className="text-xl text-center md:text-left">
               Welcome to Maddox Forbes your local Loan and investment financing
               experts
-            </h1>
+            </p>
           </SlidingInComponent>
-          <div className="flex gap-4 my-10 flex-col w-3/4">
-            <SlidingInComponent delay={0.2}>
-              <h3 className="tracking-[5px] text-lg">Purchasing Power</h3>
+          <div className="flex gap-4 my-10 flex-col md:w-3/4">
+            <SlidingInComponent delay={0.4}>
+              <h3 className="tracking-[5px] text-lg text-center md:text-left">
+                Purchasing Power
+              </h3>
             </SlidingInComponent>
             <SlidingInComponent
-              delay={0.4}
-              class="flex flex-row gap-2  items-start justify-center"
+              delay={0.6}
+              class="flex flex-col md:flex-row gap-4 md:gap-2  items-start justify-center"
             >
               <div className="w-full h-full flex flex-col items-center justify-center ">
-                <h5 className="text-4xl">
+                <h5 className="text-4xl text-center md:text-left">
                   SET YOURSELF UP FOR SUCCESS & SHOP WITH CONFIDENCE
                 </h5>
               </div>
-              <div className="w-full text-lg flex flex-col gap-2 ">
+              <div className="w-full text-lg flex flex-col gap-2 text-justify md:text-left">
                 <p>
                   We pride ourselves in providing contemporary loan solutions
                   for residential, investment, and commercial buyers by
@@ -92,19 +97,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-grey text-navy px-4 md:px-0">
-        <div className="container mx-auto flex flex-col items-center gap-6 text-center py-20">
+      <section className="bg-grey text-navy px-8 md:px-0">
+        <div className="container mx-auto flex flex-col items-center gap-6 text-center py-20 ">
           <SlidingInComponent delay={0}>
-            <h1 className="tracking-wider text-2xl md:text-2xl">
+            <h1 className="tracking-wider text-2xl md:text-2xl ">
               What we stand for
             </h1>
           </SlidingInComponent>
-          <div className="flex flex-col gap-6 md:w-3/4 w-3/4  justify-center items-start md:items-center">
+          <div className="flex flex-col gap-6 md:w-3/4 w-full  justify-center items-start md:items-center">
             <SlidingInComponent
               delay={0.4}
               class={"flex items-start md:items-center justify-center"}
             >
-              <p className="text-left md:text-center  text-lg">
+              <p className="text-left md:text-center  text-lg ">
                 Maddox forbes is a boutique mortgage brokerage powered by
                 Barrett Financial Group. Excellence is our standard, surpassing
                 it is our mission. Our brokers and advisors are passionate about
@@ -115,7 +120,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-navy text-blue-300 px-4 md:px-0">
+      <section className="bg-navy text-blue-300 px-8 md:px-0">
         <div className="container mx-auto w-full items-center justify-center flex flex-row gap-8 py-20">
           {/* Large Screen Layout */}
           <div className="w-max overflow-hidden hidden relative md:flex items-center justify-center ">
@@ -144,14 +149,14 @@ export default function Home() {
             >
               <Image
                 alt="TFK Executive Spotlight Photo"
-                src={"/images/TFK Executive Spotlight Photo.jpg"}
+                src={""}
                 width={200}
                 height={200}
                 className="cover "
               />
             </SlidingInComponent>
-            <SlidingInComponent delay={0.2} class="w-3/4">
-              <p className="mt-10">
+            <SlidingInComponent delay={0.2} class="md:w-3/4">
+              <p className="mt-10 text-justify md:text-left">
                 Born in Philadelphia and raised in the beautiful Delaware
                 Valley, Derek spent a lot of his childhood traveling up and down
                 the east coast playing competitive soccer. He has passed along
@@ -164,7 +169,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-navy  text-blue-300 px-4 md:px-0">
+      <section className="bg-navy  text-blue-300 px-8 md:px-0">
         <div className="container mx-auto w-full items-center justify-center flex flex-row-reverse gap-8 py-20">
           {/* Large Screen Layout */}
           <div className="w-max overflow-hidden hidden relative md:flex items-center justify-center ">
@@ -195,14 +200,14 @@ export default function Home() {
             >
               <Image
                 alt="TFK Executive Spotlight Photo"
-                src={""}
+                src={"/images/TFK Executive Spotlight Photo.jpg"}
                 width={200}
                 height={200}
                 className="cover "
               />
             </SlidingInComponent>
-            <SlidingInComponent delay={0.2} class="w-3/4">
-              <p className="mt-10">
+            <SlidingInComponent delay={0.2} class="md:w-3/4">
+              <p className="mt-10 text-justify md:text-left">
                 Taylor is a born and bred Tarheel native. Originally from
                 Greensboro, she attended North Carolina State University, and
                 afterwards lived for several years in Wilmington then Boone.
@@ -219,6 +224,51 @@ export default function Home() {
               </p>
             </SlidingInComponent>
           </div>
+        </div>
+      </section>
+      <section className="bg-grey text-navy px-6 md:px-0" id="loan-programs">
+        <div className="container mx-auto py-20 flex flex-col gap-6 items-center justfiy-center">
+          <SlidingInComponent delay={0}>
+            <h1 className="text-2xl uppercase">Our Loan Process</h1>
+          </SlidingInComponent>
+          <SlidingInComponent
+            delay={0.2}
+            class="md:w-3/4 w-full text-center md:text-left text-xl"
+          >
+            <p>
+              Not all lenders are created equally. At Maddox Forbes we practice
+              attention to detail at every step to ensure a loan experience
+              surpassed by none. Clear, consistent, and concise communication
+              ensures our buyers, agents, and partners have a smooth and timely
+              closing.
+            </p>
+          </SlidingInComponent>
+          <SlidingInComponent
+            delay={0.6}
+            class="flex flex-col md:flex-row gap-4 md:gap-2 md:w-3/4 items-start justify-center"
+          >
+            <div className="w-full h-full flex flex-col items-center justify-center ">
+              <h5 className="text-4xl text-center md:text-left">
+                Understanding the Application and Preapproval Process
+              </h5>
+            </div>
+            <div className="w-full text-lg flex flex-col gap-2 ">
+              <p>
+                At Maddox Forbes Premier Lending, we believe in bringing the
+                human touch back to the mortgage industry. We start every loan
+                by having a comprehensive discussion around goals and finances,
+                so that we better understand and are more equipped to fulfill
+                each buyer&apos;s desired outcome.
+              </p>
+            </div>
+          </SlidingInComponent>
+          <ul className="w-3/4">
+            <li>
+              <SlidingInComponent delay={0}>
+                <p></p>
+              </SlidingInComponent>
+            </li>
+          </ul>
         </div>
       </section>
       <Footer />
