@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* use variables */
-:root {
-  --navy: #072b61;
-  --primaryWhite: "#f6f6f6";
-}
-
 @font-face {
   font-family: "Amasis";
   src: url("/fonts/AmasisMTW1G.otf") format("opentype");
