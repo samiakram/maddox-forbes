@@ -104,11 +104,7 @@ export default function Nav() {
               </motion.li>
             ))}
           </motion.ul>
-          <a href="">
-            <div className=" px-4 py-2 border transition-all duration-300 ease-in-out border-navy text-navy hover:bg-navy hover:text-primaryWhite">
-              <span className="">Contact?</span>
-            </div>
-          </a>
+         
         </motion.div>
       )}
       <ul className="gap-6 hidden md:flex items-center relative z-10">
@@ -147,12 +143,7 @@ export default function Nav() {
             </a>
           </li>
         ))}
-        <a href="">
-          <li className="relative group w-min xl:w-auto text-center xl:text-left">
-            <span className="">Contact?</span>
-            <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
-          </li>
-        </a>
+       
       </ul>
     </nav>
   );
