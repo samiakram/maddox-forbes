@@ -1,5 +1,5 @@
 import ApplyNow from "./ApplyNow";
-import Nav from "./Nav";
+import Nav from "./Navbar";
 import Image from "next/image";
 
 export default function Landing() {

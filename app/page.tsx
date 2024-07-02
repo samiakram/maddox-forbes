@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Nav from "./Nav";
+import Nav from "./Navbar";
 
 import Image from "next/image";
 import SlidingInComponent from "./SlidingIn";
