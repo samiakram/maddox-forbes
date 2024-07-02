@@ -12,6 +12,7 @@
   src: url("/fonts/FELIXTI.TTF") format("truetype");
   font-weight: normal;
 }
+
 @font-face {
   font-family: "cali";
   src: url("/fonts/Californian FB Regular.ttf") format("truetype");
@@ -58,4 +59,8 @@ h5 {
 
 .box h1 h2 h3 h4 h5 p span {
   font-family: "cali", sans-serif;
+}
+
+video {
+  object-fit: cover;
 }

@@ -104,14 +104,13 @@ export default function Nav() {
               </motion.li>
             ))}
           </motion.ul>
-         
         </motion.div>
       )}
       <ul className="gap-6 hidden md:flex items-center relative z-10">
-        {internalLinks.map((link) => {
+        {internalLinks.map((link, idx) => {
           return (
             <>
-              <a href={link.url}>
+              <a key={idx} href={link.url}>
                 <li className="relative group w-min xl:w-auto text-center xl:text-left">
                   <span className="">{link.text}</span>
                   <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
@@ -143,7 +142,6 @@ export default function Nav() {
             </a>
           </li>
         ))}
-       
       </ul>
     </nav>
   );
