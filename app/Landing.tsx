@@ -30,7 +30,7 @@ export default function Landing() {
               alt="Maddox Forbes Logo"
               className="object-contain"
             />
-            <ApplyNow classes="" />
+            <ApplyNow classes="" color="primaryWhite" />
             <Image
               src={"/images/bf logo.png"}
               width={300}
