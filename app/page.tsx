@@ -18,6 +18,9 @@ import Investment from "./Investment";
 import USDA from "./USDA";
 import Standing from "./Standing";
 import CustomBuild from "./CustomBuild";
+import DesignSpotlight from "./DesignSpotlight";
+import BuilderByArea from "./BuilderByArea";
+import BuilderOfMonth from "./BuilderOfMonth";
 
 export default function Home() {
   return (
@@ -33,6 +36,9 @@ export default function Home() {
       <Commercial />
       <USDA />
       <CustomBuild />
+      <DesignSpotlight />
+      <BuilderByArea />
+      <BuilderOfMonth />
       <Footer />
     </main>
   );

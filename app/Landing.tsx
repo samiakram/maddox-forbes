@@ -22,7 +22,7 @@ export default function Landing() {
       >
         <Nav />
         <div className="hidden md:block md:absolute z-0 top-0 left-0 right-0 bottom-0">
-          <div className="absolute w-screen  flex items-center justify-between bottom-0">
+          <div className="absolute w-screen px-3 flex items-center justify-between bottom-3">
             <Image
               src={"/images/mf logo.png"}
               width={300}

@@ -6,6 +6,7 @@ import { internalLinks, socialLinks } from "./data";
 
 export default function Nav() {
   const [showNav, setShowNav] = useState(false);
+  // create a use state variable for opacity
 
   useEffect(() => {
     if (showNav) {
