@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="w-full bg-offWHite text-navy py-20">
-      <div className="flex flex-col gap-5 py-20 container mx-auto">
-        <div className="w-full flex justify-between items-center">
+      <div className="flex flex-col gap-5 py-10 container mx-auto">
+        <div className="w-full flex flex-col md:flex-row justify-center gap-2 md:gap-0 md:justify-between items-center">
           <Image
             src={"/images/mf logo.png"}
-            width={200}
+            width={250}
             height={250}
             alt="MF Logo"
           />
@@ -20,25 +20,25 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-1">
           {" "}
-          <h1 className="font-[felix] font-bold text-2xl">
+          <h1 className="font-[felix] text-center md:text-left font-bold text-2xl">
             Taylor Forbes Kiser
           </h1>
-          <h4 className="font-[felix] font-bold">
+          <h4 className="font-[felix] text-center md:text-left font-bold">
             Mortgage Loan Originator | NMLS #2296421
           </h4>
         </div>
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           <Image
             src={"/images/TFK Headshot Black Dress.jpg"}
             width={200}
             height={200}
             alt={"TFK"}
           />
-          <h3 className="w-1/4 text-center font-[cali] text-5xl">
+          <h3 className="md:w-1/4 mt-2 md:mt-0 text-center font-[cali] text-5xl">
             Contact us now! “We make it happen.”
           </h3>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex px-1 flex-col gap-1">
           <p className="font-[felix] font-bold text-sm">
             Barrett Financial Group, LLC | Corp NMLS #181106
           </p>
