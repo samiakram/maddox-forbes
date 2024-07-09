@@ -15,7 +15,7 @@ export default function BuilderOfMonth() {
                 alt="Barn"
               />
             </SlidingInComponent>
-            <div className="md:w-3/4 flex flex-col gap-2">
+            <div className="text-lg flex flex-col gap-2">
               <SlidingInComponent delay={0.2}>
                 <p>
                   Andrew grew up in New York State on the south side of the St.
@@ -45,16 +45,16 @@ export default function BuilderOfMonth() {
               </SlidingInComponent>
             </div>
           </div>
-          <div className="w-full flex items-center flex-col gap-2 md:gap-0">
+          <div className="w-full flex items-center flex-col gap-5 md:gap-0">
             <SlidingInComponent delay={0.2}>
-              <h2 className="text-3xl text-center font-[cali]">
+              <h2 className="text-3xl font-bold text-center font-[cali]">
                 Maddox Fobes&apos; Choice for builder of the month:
               </h2>
-              <p className="font-[amasis] italic text-center text-xl">
+              <p className="font-[amasis] my-2 italic text-center text-xl">
                 Andrew Kauffman
               </p>
             </SlidingInComponent>
-            <SlidingInComponent delay={0.4}>
+            <SlidingInComponent delay={0.4} class="">
               <Image
                 src={"/images/kaufman.jpg"}
                 width={500}

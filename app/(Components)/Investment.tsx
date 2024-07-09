@@ -7,11 +7,11 @@ export default function Investment() {
       <section className="bg-navy text-grey px-8 md:px-0" id="investment">
         <div className="container mx-auto py-20 flex flex-col gap-4 items-center justify-center">
           <SlidingInComponent delay={0}>
-            <h1 className="text-2xl underline font-bold mb-5">Investment</h1>
+            <h1 className="text-3xl underline font-bold mb-5">Investment</h1>
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.2}
-            class="flex flex-row gap-2 md:w-3/4 text-center"
+            class="flex flex-row gap-2 text-center"
           >
             <p>
               As residential financing experts, we understand the intricacies
@@ -35,21 +35,26 @@ export default function Investment() {
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.8}
-            class=" items-center md:w-3/4 flex flex-col md:flex-row justify-between text-center text-lg"
+            class="mt-20 items-center flex flex-col md:flex-row justify-between text-center text-lg"
           >
-            <Image
-              src={"/images/Investment Photo 1.jpg"}
-              width={300}
-              height={300}
-              alt="investment"
-            />
-            <div className="md:w-1/2 mt-5 md:mt-0 flex flex-col gap-2 justify-center text-center font-[cali]">
-              <p className="text-2xl">
+            <div className="w-full flex items-center justify-center">
+              <Image
+                src={"/images/Investment Photo 1.jpg"}
+                width={300}
+                height={300}
+                alt="investment"
+              />
+            </div>
+            <div className=" mt-5 md:mt-0 flex flex-col gap-2 justify-center text-center font-[felix]">
+              <p className="text-2xl font-[felix]">
                 Maddox Forbes is your
-                <span className="font-bold"> long-term partner</span> in growing
-                and diversifying your investment portfolio.
+                <span className="font-bold font-[felix]">
+                  {" "}
+                  long-term partner
+                </span>{" "}
+                in growing and diversifying your investment portfolio.
               </p>
-              <p className="text-2xl">
+              <p className="text-2xl font-[felix]">
                 Explore ways to earn more with diversified loan products that
                 suit a larger pool of buyers.
               </p>

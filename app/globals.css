@@ -24,7 +24,7 @@
   transform: translateX(-50%);
   text-align: center; /* Ensure text alignment is centered */
   /* Add vertical centering if needed */
-  top: 50%;
+  top: 35%;
   transform: translate(-50%, -50%);
 }
 
@@ -57,7 +57,7 @@ h5 {
   font-family: "felix", sans-serif;
 }
 
-.box h1 h2 h3 h4 h5 p span {
+.box {
   font-family: "cali", sans-serif;
 }
 

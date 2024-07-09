@@ -7,11 +7,11 @@ export default function Commercial() {
       <section className="bg-navy text-grey px-8 md:px-0" id="commercial">
         <div className="container mx-auto py-20 flex flex-col gap-4 items-center justify-center">
           <SlidingInComponent delay={0}>
-            <h1 className="text-2xl underline font-bold mb-5">Commercial</h1>
+            <h1 className="text-3xl underline font-bold mb-5">Commercial</h1>
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.2}
-            class="flex flex-row gap-2 md:w-3/4 text-center"
+            class="flex flex-row gap-2 text-lg text-center"
           >
             <p>
               We have a saying in our Commercial Department, “we play with the
@@ -25,8 +25,8 @@ export default function Commercial() {
           <SlidingInComponent delay={0.2}>
             <Image
               src={"/images/Commercial Photo.jpg"}
-              width={500}
-              height={500}
+              width={700}
+              height={700}
               alt="commercial"
             />
           </SlidingInComponent>

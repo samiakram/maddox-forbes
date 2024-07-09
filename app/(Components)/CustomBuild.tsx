@@ -10,9 +10,9 @@ export default function CustomBuild() {
       >
         <div className="container mx-auto py-20 flex flex-col items-center justify-center">
           <SlidingInComponent delay={0}>
-            <h1 className="text-2xl underline font-bold mb-5">Custom Build</h1>
+            <h1 className="text-3xl underline font-bold mb-5">Custom Build</h1>
           </SlidingInComponent>
-          <SlidingInComponent delay={0.2} class="md:w-3/4 text-center">
+          <SlidingInComponent delay={0.2} class="text-lg text-center">
             <p>
               Maddox Forbes has partnered with elite custom builders statewide.
               These thoroughly vetted builders&apos; range in expertise from
@@ -28,7 +28,7 @@ export default function CustomBuild() {
             class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 mt-10"
           >
             <div className="text-5xl w-full flex  items-center justify-center font-[cali] text-center font-bold">
-              <p className="md:w-2/4">
+              <p className="md:w-3/4 font-[felix]">
                 Create the home of your dreams from scratch!
               </p>
             </div>

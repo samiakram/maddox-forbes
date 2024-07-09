@@ -38,16 +38,14 @@ export const socialLinks: SocialLink[] = [
     url: "https://www.instagram.com",
     icon: AiFillInstagram,
   },
-  // {
-  //   id: 2,
-  //   url: "https://www.facebook.com",
-  //   icon: FaFacebook,
-  // },
+  {
+    id: 2,
+    url: "https://www.facebook.com",
+    icon: FaFacebook,
+  },
   {
     id: 3,
     url: "https://www.youtube.com",
     icon: AiFillYoutube,
   },
 ];
-
-

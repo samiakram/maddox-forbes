@@ -1,26 +1,21 @@
 "use client";
 
 import React from "react";
-import Nav from "./Navbar";
-
-import Image from "next/image";
-import SlidingInComponent from "./SlidingIn";
-import Footer from "./footer";
-import ApplyNow from "./ApplyNow";
-import LoanProcess from "./LoanProcess";
-import Employees from "./Employees";
-import About from "./About";
-import Landing from "./Landing";
-import Services from "./Services";
-import Residential from "./Residential";
-import Commercial from "./Commercial";
-import Investment from "./Investment";
-import USDA from "./USDA";
-import Standing from "./Standing";
-import CustomBuild from "./CustomBuild";
-import DesignSpotlight from "./DesignSpotlight";
-import BuilderByArea from "./BuilderByArea";
-import BuilderOfMonth from "./BuilderOfMonth";
+import Footer from "./(Components)/footer";
+import LoanProcess from "./(Components)/LoanProcess";
+import Employees from "./(Components)/Employees";
+import About from "./(Components)/About";
+import Landing from "./(Components)/Landing";
+import Services from "./(Components)/Services";
+import Residential from "./(Components)/Residential";
+import Commercial from "./(Components)/Commercial";
+import Investment from "./(Components)/Investment";
+import USDA from "./(Components)/USDA";
+import Standing from "./(Components)/Standing";
+import CustomBuild from "./(Components)/CustomBuild";
+import DesignSpotlight from "./(Components)/DesignSpotlight";
+import BuilderByArea from "./(Components)/BuilderByArea";
+import BuilderOfMonth from "./(Components)/BuilderOfMonth";
 
 export default function Home() {
   return (

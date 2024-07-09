@@ -24,7 +24,7 @@ export default function USDA() {
             delay={0.2}
             class="md:w-3/4 text-center relative h-[400px]"
           >
-            <div className="relative h-[400px] z-10 left-0 right-0 top-0 bottom-0 flex items-center justify-center">
+            <div className="relative h-[400px] z-10 left-0 right-0 top-0 bottom-0 flex items-end justify-center">
               <video
                 ref={videoRef}
                 muted
@@ -35,7 +35,7 @@ export default function USDA() {
               >
                 <source src="/videos/video.mp4" type="video/mp4" />
               </video>
-              <p className=" z-10 text-offWhite">
+              <p className="mb-5 px-4 font-bold text-lg z-10 text-offWhite">
                 Did you know nationwide there is a shortage of young farmers? 1
                 in 3 farmers is 65 years or older, with latest census reporting
                 roughly only 300,000 farmers are under the age of 35. We have

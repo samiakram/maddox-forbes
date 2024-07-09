@@ -7,7 +7,7 @@ export default function Residential() {
       <section className="bg-offWhite text-navy px-8 md:px-0" id="residential">
         <div className="container mx-auto py-20 flex flex-col gap-4 items-center justify-center md:w-3/4">
           <SlidingInComponent delay={0}>
-            <h1 className="text-2xl underline font-bold mb-5">Residential</h1>
+            <h1 className="text-3xl underline font-bold mb-5">Residential</h1>
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.2}
@@ -22,13 +22,13 @@ export default function Residential() {
               />
               <div className="mt-5">Blueprint</div>
             </div>
-            <div className="w-full flex items-start mt-10 justify-center">
-              <div className="md:w-1/2 w-3/4">
-                <h1 className="italic text-2xl text-center font-[cali]">
+            <div className="w-full flex items-center mt-10 justify-center">
+              <div className="mb-16">
+                <h1 className="italic text-3xl text-center font-[cali]">
                   Not sure whether to{" "}
                   <span className="underline">buy or build?</span>
                 </h1>
-                <p className="italic text-xl text-center">
+                <p className="italic text-2xl text-center">
                   Our experts can help you review over all loan program options
                   you qualify for, so you can make an informed decision!
                 </p>
@@ -36,11 +36,11 @@ export default function Residential() {
             </div>
           </SlidingInComponent>
           <SlidingInComponent delay={0.4}>
-            <h1 className="text-xl font-[felix] mt-5">
+            <h1 className="text-2xl font-[felix] mt-5">
               Veterans&apos; affairs loans
             </h1>
           </SlidingInComponent>
-          <SlidingInComponent delay={0.8} class="md:w-3/4 text-center text-lg">
+          <SlidingInComponent delay={0.8} class="text-center text-lg">
             <p>
               All gave some and some gave all, therefore, our veterans deserve
               the most competitive affordable loans on the market. We have all
@@ -62,11 +62,11 @@ export default function Residential() {
             />
           </SlidingInComponent>
           <SlidingInComponent delay={0.4}>
-            <h1 className="text-xl font-[felix] mt-5">
+            <h1 className="text-2xl font-[felix] mt-5">
               Historic Renovation loans
             </h1>
           </SlidingInComponent>
-          <SlidingInComponent delay={0.8} class="md:w-3/4 text-center text-lg">
+          <SlidingInComponent delay={0.8} class="text-center text-lg">
             <p>Does the home you have your sights set on need some TLC?</p>
             <p>
               We have access to renovation loans created specifically for this
@@ -85,9 +85,9 @@ export default function Residential() {
                 alt="Residential"
               />
             </div>
-            <div className="w-full flex items-start mt-10 justify-center">
-              <div className="md:w-3/4">
-                <h1 className="italic text-3xl text-center font-[cali]">
+            <div className="w-full flex items-center mt-10 justify-center">
+              <div className="flex flex-col gap-2 mb-10">
+                <h1 className="italic text-3xl text-center font-[felix]">
                   Customized Residential Loan Programs
                 </h1>
                 <p className="italic text-2xl text-center">

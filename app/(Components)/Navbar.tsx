@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { internalLinks, socialLinks } from "./data";
+import { internalLinks, socialLinks } from "../data";
 
 export default function Nav() {
   const [showNav, setShowNav] = useState(false);
@@ -107,14 +107,14 @@ export default function Nav() {
           </motion.ul>
         </motion.div>
       )}
-      <ul className="gap-6 hidden md:flex items-center relative z-10">
+      <ul className="gap-4 font-[felix] hidden mb-4 md:flex items-center pl-36 relative z-10">
         {internalLinks.map((link, idx) => {
           return (
             <>
               <a key={idx} href={link.url}>
                 <li className="relative group w-min xl:w-auto text-center xl:text-left">
-                  <span className="">{link.text}</span>
-                  <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
+                  <span className="font-[felix] ">{link.text}</span>
+                  <span className="font-[felix] absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
                 </li>
               </a>
             </>
@@ -122,13 +122,13 @@ export default function Nav() {
         })}
       </ul>
       <h3
-        className={`absolute-center text-3xl z-20 ${
+        className={`absolute-center font-[felix] text-3xl z-20 ${
           showNav ? "text-navy" : ""
         }`}
       >
         <a href="/"> Maddox Forbes</a>
       </h3>
-      <ul className="hidden md:flex gap-6 z-10">
+      <ul className="hidden  mb-4 pr-40 md:flex gap-6 z-10">
         {socialLinks.map((social) => (
           <li key={social.id}>
             <a
