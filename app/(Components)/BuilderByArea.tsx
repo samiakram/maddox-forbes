@@ -43,11 +43,11 @@ export default function BuilderByArea() {
               Builders by Area{" "}
             </h3>
           </SlidingInComponent>
-          <ul className="list-disc gap-x-5 gap-y-5 place-items-stretch font-felix grid grid-cols-3 mt-5">
+          <ul className="list-disc gap-x-5 gap-y-5 font-felix grid grid-cols-3 mt-5">
             {builders.map((builder, idx) => {
               return (
                 <SlidingInComponent key={idx}>
-                  <li key={idx} className="  flex flex-col  h-full col-span-1">
+                  <li key={idx} className=" flex flex-col  h-full col-span-1">
                     <h4 className="font-bold">{builder.area}</h4>
                     <ul className="list-disc ml-5">
                       <li>

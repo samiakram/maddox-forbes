@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SlidingInComponent from "./SlidingIn";
+import Carousel from "./Carousel";
 
 export default function BuilderOfMonth() {
   return (
@@ -61,6 +62,13 @@ export default function BuilderOfMonth() {
                 height={500}
                 alt="Kaufman"
               />
+              {/* <Carousel
+                images={[
+                  { url: "/images/kaufman.jpg" },
+                  { url: "/images/kaufman3.jpg" },
+                  { url: "/images/kaufman2.jpg" },
+                ]}
+              /> */}
             </SlidingInComponent>
           </div>
         </div>

@@ -48,25 +48,25 @@ export default function USDA() {
           </SlidingInComponent>
           <hr className="mt-10 w-full" />
           <SlidingInComponent delay={0.4} class="mt-10">
-            <div className="flex flex-col md:flex-row gap-2">
+            <div className="flex flex-col md:flex-row gap-8">
               <Image
                 src={"/images/USDA Photo.jpg"}
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 alt="USDA Photo"
                 className="w-full"
               />
               <Image
                 src={"/images/farm2.jpg"}
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 alt="USDA Photo"
                 className="w-full"
               />
               <Image
                 src={"/images/land.jpg"}
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 alt="USDA Photo"
                 className="w-full"
               />

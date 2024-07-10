@@ -5,7 +5,7 @@ export default function Residential() {
   return (
     <>
       <section className="bg-offWhite text-navy px-8 md:px-0" id="residential">
-        <div className="container mx-auto py-20 flex flex-col gap-4 items-center justify-center md:w-3/4">
+        <div className="container mx-auto py-20 flex flex-col gap-4 items-center justify-center ">
           <SlidingInComponent delay={0}>
             <h1 className="text-3xl underline font-bold mb-5">Residential</h1>
           </SlidingInComponent>
@@ -16,8 +16,8 @@ export default function Residential() {
             <div className="w-full flex flex-col items-center justify-center">
               <Image
                 src={"/images/Picture 1.jpg"}
-                width={500}
-                height={500}
+                width={700}
+                height={700}
                 alt="Residential"
               />
               <div className="mt-5">Blueprint</div>
@@ -42,11 +42,9 @@ export default function Residential() {
           </SlidingInComponent>
           <SlidingInComponent delay={0.8} class="text-center text-lg">
             <p>
-              All gave some and some gave all, therefore, our veterans deserve
-              the most competitive affordable loans on the market. We have all
-              manner of programs to meet any service member&apos;s needs. We
-              also go the extra mile and request on your behalf your certificate
-              of eligibility, so you don&apos;t have to!
+              All gave some and some gave all, therefore, our veterans and
+              active service members deserve the most competitive affordable
+              loans on the market...
             </p>
             <p>
               With this information, it is our goal to get veterans in homes
@@ -56,8 +54,8 @@ export default function Residential() {
           <SlidingInComponent delay={1}>
             <Image
               src={"/images/memorial day flags.jpg"}
-              width={500}
-              height={500}
+              width={700}
+              height={700}
               alt="memorial day flags"
             />
           </SlidingInComponent>
@@ -80,8 +78,8 @@ export default function Residential() {
             <div className="w-full flex  items-center justify-center">
               <Image
                 src={"/images/historic renovation.jpg"}
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 alt="Residential"
               />
             </div>
@@ -98,23 +96,29 @@ export default function Residential() {
               </div>
             </div>
           </SlidingInComponent>
-          <SlidingInComponent delay={0.4}>
+          <SlidingInComponent delay={0.4} class="w-full">
             <h1 className="font-[cali] text-3xl w-full text-center mt-10">
               Before vs. After
             </h1>
-            <div className="flex flex-col md:flex-row items-start justify-center gap-2 overflow-clip">
-              <Image
-                src={"/images/before.jpg"}
-                alt="Before"
-                width={500}
-                height={500}
-              />
-              <Image
-                src={"/images/after.jpg"}
-                alt="Before"
-                width={520}
-                height={520}
-              />
+            <div className="flex flex-col md:flex-row items-start justify-around mt-5 gap-2 overflow-clip">
+              <div className="w-full">
+                {" "}
+                <Image
+                  src={"/images/before.jpg"}
+                  alt="Before"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <div className="w-full">
+                {" "}
+                <Image
+                  src={"/images/after.jpg"}
+                  alt="After"
+                  width={700}
+                  height={700}
+                />
+              </div>
             </div>
           </SlidingInComponent>
           <SlidingInComponent
