@@ -1,4 +1,5 @@
 import ApplyNow from "./ApplyNow";
+import DesignSvg from "./DesignSVG";
 import SlidingInComponent from "./SlidingIn";
 
 export default function LoanProcess() {
@@ -8,6 +9,7 @@ export default function LoanProcess() {
         <div className="container mx-auto py-20 flex flex-col gap-6 items-center justfiy-center">
           <SlidingInComponent delay={0}>
             <h1 className="text-3xl uppercase">Our Loan Process</h1>
+            <DesignSvg />
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class=" w-full text-center text-xl">
             <p>

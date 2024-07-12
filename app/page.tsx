@@ -16,6 +16,9 @@ import CustomBuild from "./(Components)/CustomBuild";
 import DesignSpotlight from "./(Components)/DesignSpotlight";
 import BuilderByArea from "./(Components)/BuilderByArea";
 import BuilderOfMonth from "./(Components)/BuilderOfMonth";
+import LoanInquiryForm from "./(Components)/LoanInquiryForm";
+import BuilderInquiryForm from "./(Components)/BuilderInquiryForm";
+import FormsTools from "./(Components)/FormsTools";
 
 export default function Home() {
   return (
@@ -34,7 +37,10 @@ export default function Home() {
       <DesignSpotlight />
       <BuilderByArea />
       <BuilderOfMonth />
+      <FormsTools />
       <Footer />
+      <LoanInquiryForm />
+      <BuilderInquiryForm />
     </main>
   );
 }

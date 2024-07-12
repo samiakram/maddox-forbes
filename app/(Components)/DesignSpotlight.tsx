@@ -6,7 +6,7 @@ export default function DesignSpotlight() {
       <section className="bg-grey text-navy px-4 md:px-0">
         <div className="container mx-auto py-20 flex flex-col items-center justify-center">
           <SlidingInComponent delay={0}>
-            <h1 className="text-2xl underline font-bold mb-5">
+            <h1 className="text-3xl underline font-bold mb-5">
               Neighborhood/ Build Design Spotlight
             </h1>
           </SlidingInComponent>

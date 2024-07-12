@@ -1,3 +1,4 @@
+import InquiryForm from "./InquiryFormLink";
 import SlidingInComponent from "./SlidingIn";
 import Image from "next/image";
 
@@ -54,15 +55,7 @@ export default function About() {
               delay={0.8}
               class="flex flex-col gap-4 items-center justify-center w-full mt-5"
             >
-              <h3 className="text-xl">Loan Inquiry Request Form</h3>
-              <button className="">
-                <Image
-                  src={"/images/Box Picture Link.jpg"}
-                  width={120}
-                  height={50}
-                  alt="Box Picture Link"
-                />
-              </button>
+              <InquiryForm loan={true} />
             </SlidingInComponent>
           </div>
         </div>

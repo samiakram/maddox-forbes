@@ -83,8 +83,9 @@ const data = [
 export default function Employees() {
   return (
     <>
-      {data.map((employee) => (
+      {data.map((employee, idx) => (
         <EmployeeSlide
+          key={idx}
           image={employee.image}
           name={employee.name}
           title={employee.title}

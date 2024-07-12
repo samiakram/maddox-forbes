@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SlidingInComponent from "./SlidingIn";
+import InquiryForm from "./InquiryFormLink";
 
 export default function CustomBuild() {
   return (
@@ -44,17 +45,7 @@ export default function CustomBuild() {
             delay={0.8}
             class="flex flex-col gap-4 items-center justify-center w-full mt-5"
           >
-            <h3 className="text-xl text-center font-bold mt-4">
-              Builder INQUIRY REQUEST Form
-            </h3>
-            <button className="">
-              <Image
-                src={"/images/Box Picture Link.jpg"}
-                width={120}
-                height={50}
-                alt="Box Picture Link"
-              />
-            </button>
+            <InquiryForm loan={false} />
           </SlidingInComponent>
         </div>
       </section>

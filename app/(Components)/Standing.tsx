@@ -1,3 +1,4 @@
+import DesignSvg from "./DesignSVG";
 import SlidingInComponent from "./SlidingIn";
 
 export default function Standing() {
@@ -9,6 +10,7 @@ export default function Standing() {
             <h1 className="tracking-wider text-2xl md:text-3xl ">
               What we stand for
             </h1>
+            <DesignSvg />
           </SlidingInComponent>
           <div className="flex flex-col gap-6  w-full  justify-center items-start md:items-center">
             <SlidingInComponent
