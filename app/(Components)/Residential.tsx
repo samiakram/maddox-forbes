@@ -42,7 +42,7 @@ export default function Residential() {
             </h1>
           </SlidingInComponent>
           <SlidingInComponent delay={0.8} class="text-center text-lg">
-            <p>
+            <p className="text-lg">
               All gave some and some gave all, therefore, our veterans and
               active service members deserve the most competitive affordable
               loans on the market...

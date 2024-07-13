@@ -11,7 +11,7 @@ export default function Investment() {
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.2}
-            class="flex flex-row gap-2 text-center"
+            class="flex flex-row gap-2 text-center text-lg"
           >
             <p>
               As residential financing experts, we understand the intricacies
