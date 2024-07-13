@@ -50,7 +50,7 @@ export default function FormsTools() {
         <ul className="grid grid-cols-2 list-disc place-items-stretch mt-10 w-full gap-y-2">
           {links.map((link, idx) => {
             return (
-              <SlidingInComponent delay={0.1 * idx} class="">
+              <SlidingInComponent key={idx} delay={0.1 * idx} class="">
                 <li>{link.name}</li>
               </SlidingInComponent>
             );
