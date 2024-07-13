@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-offWHite text-navy py-20">
+    <footer className="w-full bg-offWHite text-navy py-20 px-4 md:px-0 ">
       <div className="flex flex-col gap-5 py-10 container mx-auto">
         <div className="w-full flex flex-col md:flex-row justify-center gap-2 md:gap-0 md:justify-between items-center">
           <Image
@@ -31,7 +31,7 @@ export default function Footer() {
             Mortgage Loan Originator | NMLS #2296421
           </h4>
         </div> */}
-        <div className="flex mt-10 flex-row gap-5 items-center ">
+        <div className="flex mt-10 flex-col md:flex-row gap-5 items-center ">
           <div className="flex md:flex-row justify-between items-center">
             <Image
               src={"/images/TFK Headshot Black Dress.jpg"}

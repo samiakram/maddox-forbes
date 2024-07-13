@@ -4,7 +4,7 @@ import SlidingInComponent from "./SlidingIn";
 export default function Standing() {
   return (
     <>
-      <section className="bg-grey text-navy px-8 md:px-0">
+      <section className="bg-grey text-navy px-4 md:px-0">
         <div className="container mx-auto flex flex-col items-center gap-6 text-center py-20 ">
           <SlidingInComponent delay={0}>
             <h1 className="tracking-wider text-2xl md:text-3xl ">

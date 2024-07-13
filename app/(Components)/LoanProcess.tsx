@@ -5,14 +5,14 @@ import SlidingInComponent from "./SlidingIn";
 export default function LoanProcess() {
   return (
     <>
-      <section className="bg-grey text-navy px-6 md:px-0" id="loan-programs">
+      <section className="bg-grey text-navy px-4 md:px-0" id="loan-programs">
         <div className="container mx-auto py-20 flex flex-col gap-6 items-center justfiy-center">
           <SlidingInComponent delay={0}>
             <h1 className="text-3xl uppercase">Our Loan Process</h1>
             <DesignSvg />
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class=" w-full text-center text-xl">
-            <p>
+            <p className="">
               Not all lenders are created equally. At Maddox Forbes we practice
               attention to detail at every step to ensure a loan experience
               surpassed by none. Clear, consistent, and concise communication
@@ -25,7 +25,7 @@ export default function LoanProcess() {
             class="flex flex-col md:flex-row gap-4 md:gap-10  items-center justify-center"
           >
             <div className="w-full h-full flex flex-col items-center justify-center ">
-              <h5 className="text-5xl text-center ">
+              <h5 className="text-4xl md:text-5xl text-center ">
                 Understanding the Application and Preapproval Process
               </h5>
             </div>
@@ -39,7 +39,7 @@ export default function LoanProcess() {
               </p>
             </div>
           </SlidingInComponent>
-          <ol className="px-4 md:px-0  text-lg flex flex-col gap-2">
+          <ol className="  text-lg flex flex-col gap-2">
             <li>
               <SlidingInComponent delay={0.8}>
                 <span className="font-[felix] font-bold">

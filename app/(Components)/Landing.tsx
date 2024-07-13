@@ -28,7 +28,7 @@ export default function Landing() {
               width={300}
               height={300}
               alt="Maddox Forbes Logo"
-              className="object-contain"
+              className="object-contain "
             />
             <ApplyNow classes="" color="primaryWhite" />
             <Image
@@ -36,7 +36,7 @@ export default function Landing() {
               width={300}
               height={300}
               alt="BF Logo"
-              className="object-contain "
+              className="object-contain  "
             />
           </div>
         </div>

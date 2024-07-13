@@ -61,7 +61,7 @@ export default function Residential() {
             />
           </SlidingInComponent>
           <SlidingInComponent delay={0.4}>
-            <h1 className="text-2xl font-[felix] mt-5">
+            <h1 className="text-2xl text-center font-[felix] mt-5">
               Historic Renovation loans
             </h1>
           </SlidingInComponent>
@@ -102,8 +102,7 @@ export default function Residential() {
               Before vs. After
             </h1>
             <div className="flex flex-col md:flex-row items-start justify-around mt-5 gap-2 overflow-clip">
-              <div className="w-full">
-                {" "}
+              <div className="w-[1/2]">
                 <Image
                   src={"/images/before.jpg"}
                   alt="Before"
@@ -111,13 +110,12 @@ export default function Residential() {
                   height={500}
                 />
               </div>
-              <div className="w-full">
-                {" "}
+              <div className="w-[1/2]">
                 <Image
                   src={"/images/after.jpg"}
                   alt="After"
-                  width={700}
-                  height={700}
+                  width={600}
+                  height={600}
                 />
               </div>
             </div>

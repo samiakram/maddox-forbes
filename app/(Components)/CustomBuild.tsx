@@ -6,7 +6,7 @@ export default function CustomBuild() {
   return (
     <>
       <section
-        className="bg-navy text-lightBlue px-8 md:px-0"
+        className="bg-navy text-lightBlue px-4 md:px-0"
         id="custom-build"
       >
         <div className="container mx-auto py-20 flex flex-col items-center justify-center">
@@ -28,7 +28,7 @@ export default function CustomBuild() {
             delay={0.4}
             class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 mt-10"
           >
-            <div className="text-5xl w-full flex  items-center justify-center font-[cali] text-center font-bold">
+            <div className="text-5xl w-full flex mb-5 items-center justify-center font-[cali] text-center font-bold">
               <p className="md:w-3/4 font-[felix]">
                 Create the home of your dreams from scratch!
               </p>

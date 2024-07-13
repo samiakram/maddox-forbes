@@ -86,7 +86,10 @@ export default function LoanInquiryForm() {
 
   return (
     <>
-      <section className="bg-offWhite text-navy md:px-4 px-0" id="loan-form">
+      <section
+        className="bg-offWhite text-navy md:px-0 px-4 "
+        id="loan-form"
+      >
         <div className="container mx-auto flex flex-col gap-6 items-center justify-center py-20">
           <SlidingInComponent class="flex flex-col  justify-center items-center">
             <h1 className="text-2xl font-[felix] font-bold  text-center">
@@ -97,14 +100,14 @@ export default function LoanInquiryForm() {
             </div>
           </SlidingInComponent>
           <SlidingInComponent delay={0.1}>
-            <p className="font-[felix] italic">
+            <p className="font-[felix] italic text-center">
               Fill out the form below to request a mortgage concierge reach out
               to you directly!
             </p>
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.2}
-            class="flex flex-col gap-4 items-start justify-center w-full"
+            class="flex flex-col  gap-4 items-start justify-center w-full"
           >
             <form
               method="POST"
@@ -186,7 +189,7 @@ export default function LoanInquiryForm() {
               <h1 className="font-[felix] text-center text-xl mt-5">
                 Message to mortgage concierge:
               </h1>
-              <fieldset className="flex flex-row gap-5 font-[felix] mt-5 border border-black p-10">
+              <fieldset className="flex text-center md:text-left items-center md:flex-row flex-col gap-5 font-[felix] mt-5 border border-black p-10">
                 <label htmlFor="time" className="font-[felix]">
                   Please indicate your preferred contact method & Time :
                 </label>

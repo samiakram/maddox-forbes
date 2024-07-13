@@ -111,7 +111,10 @@ export default function BuilderInquiryForm() {
 
   return (
     <>
-      <section className="bg-offWhite text-navy md:px-4 px-0" id="builder-form">
+      <section
+        className="bg-offWhite  text-navy md:px-0 px-4"
+        id="builder-form"
+      >
         <div className="container mx-auto flex flex-col gap-6 items-center justify-center py-20">
           <SlidingInComponent class="flex flex-col  justify-center items-center">
             <h1 className="text-2xl font-[felix] font-bold  text-center">
@@ -312,7 +315,7 @@ export default function BuilderInquiryForm() {
                 <h3 className="font-[felix] italic text-lg text-center">
                   Area(S) I am interested in:
                 </h3>
-                <div className="flex flex-row justify-around mb-5">
+                <div className="flex md:flex-row flex-col justify-around mb-5">
                   <div className="flex gap-4 items-center">
                     <input
                       checked={area.includes("King/Pilot Mountain/ Mt. Airy")}
@@ -386,7 +389,7 @@ export default function BuilderInquiryForm() {
                     <label htmlFor="Costal">Costal</label>
                   </div>
                 </div>
-                <div className="flex flex-row gap-5 items-center">
+                <div className="flex flex-col  text-center md:flex-row gap-5 items-center">
                   <label htmlFor="time" className="font-[felix]">
                     Please indicate your preferred contact method & Time :
                   </label>

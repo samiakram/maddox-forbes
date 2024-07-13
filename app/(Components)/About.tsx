@@ -6,11 +6,11 @@ export default function About() {
   return (
     <>
       <section
-        className="bg-navy py-5 flex items-center justify-center text-offWhite px-8 md:px-0"
+        className="bg-navy py-5 flex items-center justify-center text-offWhite px-4 md:px-0 "
         id="about"
       >
-        <div className="container mx-auto py-20 flex flex-col items-center justify-center">
-          <SlidingInComponent delay={0} class="mb-10">
+        <div className="container  mx-auto py-20 flex flex-col items-center justify-center">
+          <SlidingInComponent delay={0} class="mb-10 ">
             <h1 className="text-3xl tracking-wider ">About</h1>
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class="">
@@ -32,8 +32,8 @@ export default function About() {
               delay={0.6}
               class="flex flex-col  md:flex-row gap-4 md:gap-4  items-start justify-center"
             >
-              <div className="w-full h-full flex flex-col items-center justify-center ">
-                <h3 className="tracking-wide ml-32 italic text-lg text-left w-full mb-2 font-[cali]">
+              <div className="w-full h-full  flex flex-col items-center justify-center ">
+                <h3 className="tracking-wide md:ml-32 italic text-lg text-center md:text-left w-full mb-2 font-[cali]">
                   Purchasing Power
                 </h3>
                 <h5 className="text-5xl text-center md:text-center font-[cali]">

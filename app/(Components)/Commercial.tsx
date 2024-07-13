@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Commercial() {
   return (
     <>
-      <section className="bg-navy text-grey px-8 md:px-0" id="commercial">
+      <section className="bg-navy text-grey px-4 md:px-0" id="commercial">
         <div className="container mx-auto py-20 flex flex-col gap-4 items-center justify-center">
           <SlidingInComponent delay={0}>
             <h1 className="text-3xl underline font-bold mb-5">Commercial</h1>

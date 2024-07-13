@@ -57,19 +57,19 @@ export default function BuilderOfMonth() {
               </p>
             </SlidingInComponent>
             <SlidingInComponent delay={0.4} class="">
-              <Image
+              {/* <Image
                 src={"/images/kaufman.jpg"}
                 width={500}
                 height={500}
                 alt="Kaufman"
-              />
-              {/* <Carousel
+              /> */}
+              <Carousel
                 images={[
                   { url: "/images/kaufman.jpg" },
                   { url: "/images/kaufman3.jpg" },
                   { url: "/images/kaufman2.jpg" },
                 ]}
-              /> */}
+              />
             </SlidingInComponent>
           </div>
         </div>
