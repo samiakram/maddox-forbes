@@ -10,12 +10,14 @@ export default function BuilderOfMonth() {
         <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-0">
           <div className="w-full flex flex-col items-center justify-start gap-5">
             <SlidingInComponent>
-              <Image
-                src={"/images/barn.png"}
-                width={200}
-                height={200}
-                alt="Barn"
-              />
+              <a href="https://barncountryusa.com/" target="_blank">
+                <Image
+                  src={"/images/barn.png"}
+                  width={200}
+                  height={200}
+                  alt="Barn"
+                />
+              </a>
             </SlidingInComponent>
             <div className="text-lg flex flex-col gap-2">
               <SlidingInComponent delay={0.2}>
@@ -50,7 +52,7 @@ export default function BuilderOfMonth() {
           <div className="w-full flex items-center flex-col gap-5 md:gap-0">
             <SlidingInComponent delay={0.2}>
               <h2 className="text-3xl font-bold text-center font-[cali]">
-                Maddox Fobes&apos; Choice for builder of the month:
+                Maddox Forbes&apos; Choice for builder of the month:
               </h2>
               <p className="font-[amasis] my-2 italic text-center text-xl">
                 Andrew Kauffman
@@ -65,9 +67,22 @@ export default function BuilderOfMonth() {
               /> */}
               <Carousel
                 images={[
-                  { url: "/images/kaufman.jpg" },
-                  { url: "/images/kaufman3.jpg" },
-                  { url: "/images/kaufman2.jpg" },
+                  { url: "/images/kaufman.jpg", isImage: true, duration: 2000 },
+                  {
+                    url: "/images/kaufman3.jpg",
+                    isImage: true,
+                    duration: 2000,
+                  },
+                  {
+                    url: "/images/kaufman2.jpg",
+                    isImage: true,
+                    duration: 2000,
+                  },
+                  {
+                    url: "/videos/video.mp4",
+                    isImage: false,
+                    duration: 5000,
+                  },
                 ]}
               />
             </SlidingInComponent>
@@ -75,7 +90,7 @@ export default function BuilderOfMonth() {
         </div>
         <SlidingInComponent
           delay={0.8}
-          class="flex flex-col gap-4 items-center justify-center w-full mt-5"
+          class="flex flex-col gap-4 items-center justify-center w-full mt-16"
         >
           <InquiryForm loan={false} />
         </SlidingInComponent>

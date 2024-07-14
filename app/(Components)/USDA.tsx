@@ -16,7 +16,7 @@ export default function USDA() {
       <section className=" px-8 md:px-0 bg-offWhite text-lightBlue">
         <div className="container mx-auto py-20 flex flex-col items-center justify-center">
           <SlidingInComponent delay={0}>
-            <h1 className="text-2xl underline font-bold mb-5">
+            <h1 className="text-4xl underline font-bold mb-5">
               USDA, Land, and Farm
             </h1>
           </SlidingInComponent>
@@ -35,7 +35,7 @@ export default function USDA() {
               >
                 <source src="/videos/video.mp4" type="video/mp4" />
               </video>
-              <p className="mb-5 px-4 font-bold text-lg z-10 text-offWhite">
+              <p className="mb-5 px-4 font-bold text-2xl text-navy z-10">
                 Did you know nationwide there is a shortage of young farmers? 1
                 in 3 farmers is 65 years or older, with latest census reporting
                 roughly only 300,000 farmers are under the age of 35. We have
@@ -71,7 +71,7 @@ export default function USDA() {
                 className="w-full"
               />
             </div>
-            <ApplyNow classes="mt-10" />
+            <ApplyNow classes="mt-16" color="lightBlue" />
           </SlidingInComponent>
         </div>
       </section>

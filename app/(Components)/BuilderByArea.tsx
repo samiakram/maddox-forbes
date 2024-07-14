@@ -7,8 +7,7 @@ export default function BuilderByArea() {
       area: "Pinehurst/southern pines",
       builder: "Camina Design and Construction",
       link: "",
-      subtitle:
-        "Call lily Camina today to have her make all your interior design dreams come true. Her contemporary yet timeless designs are the epitome of class and sophistication.",
+      subtitle: "",
     },
     {
       area: "Wilmington",
@@ -34,27 +33,30 @@ export default function BuilderByArea() {
       link: "",
       subtitle: "Porter & Cress",
     },
+    {
+      area: "Mt. Airy",
+      builder: "Todd Thomas Contracting",
+      link: "",
+      subtitle: "Porter & Cress",
+    },
   ];
   return (
     <>
       <section className="bg-offWhite text-navy px-8 md:px-0 ">
         <div className="container mx-auto flex flex-col items-center justify-center py-20">
           <SlidingInComponent class="flex  flex-col items-center justify-center">
-            <h3 className="font-[felix] text-center font-bold text-3xl mb-10">
+            <h3 className="font-[felix] text-center font-bold text-4xl mb-10">
               Builders by Area
               <div className="w-full">
                 <DesignSvg />
               </div>
             </h3>
           </SlidingInComponent>
-          <ul className="list-disc border border-black place-content-between text-lg gap-y-5 font-felix grid grid-cols-3 mt-5">
+          <ul className="list-disc  place-content-between text-lg gap-y-5 font-felix grid grid-cols-3 mt-5">
             {builders.map((builder, idx) => {
               return (
                 <SlidingInComponent delay={0.2 * idx} key={idx}>
-                  <li
-                    key={idx}
-                    className=" flex flex-col h-full border border-[red]"
-                  >
+                  <li key={idx} className=" flex flex-col h-full ">
                     <h4 className="font-bold">{builder.area}</h4>
                     <ul className="list-disc ml-5">
                       <li>

@@ -39,7 +39,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="h-14 z-10 px-4 border border-black md:px-0 text-primaryWhite relative container mx-auto  w-full flex flex-col md:flex-row items-center justify-between">
+    <nav className="h-14 z-10 px-4  md:px-0 text-primaryWhite relative container mx-auto  w-full flex flex-col md:flex-row items-center justify-between">
       {!showNav && (
         <button
           onClick={() => setShowNav(true)}

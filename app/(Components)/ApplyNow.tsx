@@ -10,7 +10,7 @@ export default function ApplyNow({
   return (
     <>
       <h1
-        className={`text-2xl font-bold text-center font-[felix] text-${color} ${classes}`}
+        className={`text-3xl font-bold text-center font-[felix] text-${color} ${classes}`}
       >
         <a href={href} target="_blank">
           Apply Now

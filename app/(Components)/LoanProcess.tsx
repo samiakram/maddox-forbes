@@ -8,10 +8,10 @@ export default function LoanProcess() {
       <section className="bg-grey text-navy px-4 md:px-0" id="loan-programs">
         <div className="container mx-auto py-20 flex flex-col gap-6 items-center justfiy-center">
           <SlidingInComponent delay={0}>
-            <h1 className="text-3xl uppercase">Our Loan Process</h1>
+            <h1 className="text-4xl uppercase">Our Loan Process</h1>
             <DesignSvg />
           </SlidingInComponent>
-          <SlidingInComponent delay={0.2} class=" w-full text-center text-xl">
+          <SlidingInComponent delay={0.2} class=" w-full text-center text-3xl">
             <p className="">
               Not all lenders are created equally. At Maddox Forbes we practice
               attention to detail at every step to ensure a loan experience
@@ -22,14 +22,14 @@ export default function LoanProcess() {
           </SlidingInComponent>
           <SlidingInComponent
             delay={0.6}
-            class="flex flex-col md:flex-row gap-4 md:gap-10  items-center justify-center"
+            class="flex flex-col md:flex-row gap-4 md:gap-10  items-center justify-center my-5"
           >
             <div className="w-full h-full flex flex-col items-center justify-center ">
-              <h5 className="text-4xl md:text-5xl text-center ">
-                Understanding the Application and Preapproval Process
+              <h5 className="text-5xl md:text-5xl text-left ">
+                Understanding the Application & Preapproval Process
               </h5>
             </div>
-            <div className="w-full text-xl flex flex-col gap-2 text-center">
+            <div className="w-full italic text-3xl flex flex-col gap-2 text-center">
               <p>
                 At Maddox Forbes Premier Lending, we believe in bringing the
                 human touch back to the mortgage industry. We start every loan
@@ -39,7 +39,7 @@ export default function LoanProcess() {
               </p>
             </div>
           </SlidingInComponent>
-          <ol className="  text-lg flex flex-col gap-2">
+          <ol className="  text-2xl flex flex-col gap-5">
             <li>
               <SlidingInComponent delay={0.8}>
                 <span className="font-[felix] font-bold">

@@ -32,7 +32,7 @@ export default function Home() {
       <Commercial />
       <USDA />
       <CustomBuild />
-      <DesignSpotlight />
+      {/* <DesignSpotlight /> */}
       <BuilderByArea />
       <BuilderOfMonth />
       <FormsTools />

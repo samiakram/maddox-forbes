@@ -9,11 +9,15 @@ export default function FormsTools() {
     },
     {
       name: "Builder Contact Form ",
-      link: "",
+      link: "builder-form",
     },
     {
       name: "National Do not Call Registry ",
       link: "",
+    },
+    {
+      name: "Loan Contact Form",
+      link: "/loan-form",
     },
     {
       name: "Construction Drawls ",
@@ -32,7 +36,7 @@ export default function FormsTools() {
       link: "",
     },
     {
-      name: "Homeowner&apos;s Insurance Quote ",
+      name: "Homeowner's Insurance Quote ",
       link: "",
     },
     {
@@ -55,14 +59,16 @@ export default function FormsTools() {
     >
       <div className="flex flex-col items-center justify-center py-10 container mx-auto">
         <SlidingInComponent>
-          <h1 className="text-2xl font-bold text-center">Forms & Tools</h1>
+          <h1 className="text-4xl font-bold text-center">Forms & Tools</h1>
           <DesignSvg />
         </SlidingInComponent>
         <ul className="grid  w-3/4 list-inside grid-cols-2 gap-40 list-disc place-items-stretch mt-20 text-xl gap-y-2">
           {links.map((link, idx) => {
             return (
               <SlidingInComponent key={idx} delay={0.1 * idx} class="">
-                <li className="">{link.name}</li>
+                <a href={link.link}>
+                  <li className="">{link.name}</li>
+                </a>
               </SlidingInComponent>
             );
           })}

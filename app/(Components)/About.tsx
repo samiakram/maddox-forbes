@@ -30,17 +30,17 @@ export default function About() {
           <div className="flex gap-4 my-10 flex-col">
             <SlidingInComponent
               delay={0.6}
-              class="flex flex-col  md:flex-row gap-4 md:gap-4  items-start justify-center"
+              class="flex flex-col md:flex-row  md:gap-10  items-start justify-center"
             >
-              <div className="w-full h-full  flex flex-col items-center justify-center ">
-                <h3 className="tracking-wide  italic text-2xl text-center md:text-left w-full mb-2 font-[cali]">
+              <div className="w-full h-full  flex flex-col items-between gap-8 mt-8 justify-start  ">
+                <h3 className="tracking-wide  italic text-4xl text-center md:text-center w-full mb-2 font-[cali]">
                   Purchasing Power
                 </h3>
-                <h5 className="text-6xl text-center md:text-left font-[cali]">
-                  SET YOURSELF UP FOR SUCCESS & SHOP WITH CONFIDENCE
+                <h5 className="text-5xl w-full border text-center md:text-center font-[cali]">
+                  SET YOURSELF UP FOR SUCCESS <br />&<br /> SHOP WITH CONFIDENCE
                 </h5>
               </div>
-              <div className="w-full text-xl mt-8 flex flex-col gap-2 items-center text-left">
+              <div className="w-2/3 border leading-relaxed text-2xl mt-8 flex flex-col gap-2 items-center justify-center text-left">
                 <p>
                   Whether you are looking to buy your first home or expand your
                   real estate portfolio, our experts have decades of experience

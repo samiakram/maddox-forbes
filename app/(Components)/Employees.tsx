@@ -36,10 +36,10 @@ function EmployeeSlide({
             />
           </SlidingInComponent>
         </div>
-        <div className="flex  md:w-1/2 flex-col items-center justify-center  ">
+        <div className="flex  md:w-3/4 flex-col items-center justify-center  ">
           <SlidingInComponent delay={0}>
-            <h3 className="text-3xl text-center">{name}</h3>
-            <h3 className="text-xl text-center">{title}</h3>
+            <h3 className="text-4xl text-center">{name}</h3>
+            <h3 className="text-3xl text-center">{title}</h3>
           </SlidingInComponent>
           {/* Mobile Layout Image */}
           <SlidingInComponent
@@ -55,7 +55,7 @@ function EmployeeSlide({
             />
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class="">
-            <p className="mt-10 text-lg text-left">{bio}</p>
+            <p className="mt-10 text-3xl text-left">{bio}</p>
           </SlidingInComponent>
         </div>
       </div>
