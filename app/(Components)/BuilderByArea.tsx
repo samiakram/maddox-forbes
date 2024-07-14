@@ -47,7 +47,7 @@ export default function BuilderByArea() {
               </div>
             </h3>
           </SlidingInComponent>
-          <ul className="list-disc border border-black gap-x-20 text-lg gap-y-5 font-felix grid grid-cols-3 mt-5">
+          <ul className="list-disc border border-black place-content-between text-lg gap-y-5 font-felix grid grid-cols-3 mt-5">
             {builders.map((builder, idx) => {
               return (
                 <SlidingInComponent delay={0.2 * idx} key={idx}>
