@@ -1,6 +1,6 @@
 import { useState, FormEvent, ChangeEvent, useEffect } from "react";
-import DesignSvg from "./DesignSVG";
-import SlidingInComponent from "./SlidingIn";
+import DesignSvg from "../../(Components)/DesignSVG";
+import SlidingInComponent from "../../(Components)/SlidingIn";
 
 export default function BuilderInquiryForm() {
   //Customer Info

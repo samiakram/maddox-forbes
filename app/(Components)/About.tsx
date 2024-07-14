@@ -9,9 +9,9 @@ export default function About() {
         className="bg-navy py-5 flex items-center justify-center text-offWhite px-4 md:px-0 "
         id="about"
       >
-        <div className="container  mx-auto py-20 flex flex-col items-center justify-center">
+        <div className="container  mx-auto pt-20 flex flex-col items-center justify-center">
           <SlidingInComponent delay={0} class="mb-10 ">
-            <h1 className="text-3xl tracking-wider ">About</h1>
+            <h1 className="text-4xl tracking-wider ">About</h1>
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class="">
             <p className="text-xl text-center">
@@ -33,14 +33,14 @@ export default function About() {
               class="flex flex-col  md:flex-row gap-4 md:gap-4  items-start justify-center"
             >
               <div className="w-full h-full  flex flex-col items-center justify-center ">
-                <h3 className="tracking-wide md:ml-32 italic text-lg text-center md:text-left w-full mb-2 font-[cali]">
+                <h3 className="tracking-wide  italic text-2xl text-center md:text-left w-full mb-2 font-[cali]">
                   Purchasing Power
                 </h3>
-                <h5 className="text-5xl text-center md:text-center font-[cali]">
+                <h5 className="text-6xl text-center md:text-left font-[cali]">
                   SET YOURSELF UP FOR SUCCESS & SHOP WITH CONFIDENCE
                 </h5>
               </div>
-              <div className="w-full text-lg mt-8 flex flex-col gap-2 items-center text-center">
+              <div className="w-full text-xl mt-8 flex flex-col gap-2 items-center text-left">
                 <p>
                   Whether you are looking to buy your first home or expand your
                   real estate portfolio, our experts have decades of experience
@@ -53,7 +53,7 @@ export default function About() {
             </SlidingInComponent>
             <SlidingInComponent
               delay={0.8}
-              class="flex flex-col gap-4 items-center justify-center w-full mt-5"
+              class="flex flex-col  gap-4 items-center justify-center w-full mt-10"
             >
               <InquiryForm loan={true} />
             </SlidingInComponent>

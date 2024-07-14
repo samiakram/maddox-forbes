@@ -41,17 +41,28 @@ export default function FormsTools() {
     },
   ];
   return (
-    <section className="bg-offWhite text-navy px-8 md:px-0">
-      <div className="flex flex-col items-center justify-center py-20 container mx-auto">
+    <section
+      className="bg-offWhite text-navy px-8 md:px-0"
+      style={{
+        backgroundImage: "url('/images/form-tools-bg.jpg')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        height: "auto",
+        minHeight: "100vh",
+      }}
+    >
+      <div className="flex flex-col items-center justify-center py-10 container mx-auto">
         <SlidingInComponent>
           <h1 className="text-2xl font-bold text-center">Forms & Tools</h1>
           <DesignSvg />
         </SlidingInComponent>
-        <ul className="grid grid-cols-2 list-disc place-items-stretch mt-10 w-full gap-y-2">
+        <ul className="grid  w-3/4 list-inside grid-cols-2 gap-40 list-disc place-items-stretch mt-20 text-xl gap-y-2">
           {links.map((link, idx) => {
             return (
               <SlidingInComponent key={idx} delay={0.1 * idx} class="">
-                <li>{link.name}</li>
+                <li className="">{link.name}</li>
               </SlidingInComponent>
             );
           })}

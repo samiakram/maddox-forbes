@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
-import DesignSvg from "./DesignSVG";
-import SlidingInComponent from "./SlidingIn";
+import DesignSvg from "../../(Components)/DesignSVG";
+import SlidingInComponent from "../../(Components)/SlidingIn";
 import { Span } from "next/dist/trace";
 
 export default function LoanInquiryForm() {
@@ -86,10 +86,7 @@ export default function LoanInquiryForm() {
 
   return (
     <>
-      <section
-        className="bg-offWhite text-navy md:px-0 px-4 "
-        id="loan-form"
-      >
+      <section className="bg-offWhite text-navy md:px-0 px-4 " id="loan-form">
         <div className="container mx-auto flex flex-col gap-6 items-center justify-center py-20">
           <SlidingInComponent class="flex flex-col  justify-center items-center">
             <h1 className="text-2xl font-[felix] font-bold  text-center">

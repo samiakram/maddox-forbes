@@ -39,7 +39,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="h-14 z-10 px-4 md:px-0 text-primaryWhite relative container mx-auto  w-full flex flex-col md:flex-row items-center justify-between">
+    <nav className="h-14 z-10 px-4 border border-black md:px-0 text-primaryWhite relative container mx-auto  w-full flex flex-col md:flex-row items-center justify-between">
       {!showNav && (
         <button
           onClick={() => setShowNav(true)}
@@ -107,7 +107,7 @@ export default function Nav() {
           </motion.ul>
         </motion.div>
       )}
-      <ul className="gap-4 font-[felix] hidden mb-4 md:flex items-center pl-36 relative z-10">
+      <ul className="gap-4 pl-36 font-[felix] hidden mb-4 md:flex items-center relative z-10">
         {internalLinks.map((link, idx) => {
           return (
             <>

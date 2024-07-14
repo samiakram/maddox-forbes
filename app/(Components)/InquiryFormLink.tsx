@@ -6,7 +6,7 @@ export default function InquiryForm({ loan }: { loan: boolean }) {
       <h3 className="text-xl">
         {loan ? "Loan Inquiry Request Form" : "Builder Inquiry Request Form"}
       </h3>
-      <a href={loan ? "#loan-form" : "#builder-form"}>
+      <a href={loan ? "/loan-form" : "/builder-form"}>
         <Image
           src={"/images/Box Picture Link.jpg"}
           width={120}

@@ -2,23 +2,24 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-offWHite text-navy py-20 px-4 md:px-0 ">
+    <footer className="w-full bg-offWhite text-navy py-10 px-4 md:px-0 ">
       <div className="flex flex-col gap-5 py-10 container mx-auto">
         <div className="w-full flex flex-col md:flex-row justify-center gap-2 md:gap-0 md:justify-between items-center">
           <Image
             src={"/images/mf logo.png"}
-            width={250}
-            height={250}
+            width={350}
+            height={350}
             alt="MF Logo"
+            className=""
           />
-          <h3 className=" mt-2 md:mt-0 text-center font-[cali] text-4xl">
+          <h3 className=" mt-2 md:mt-0 text-center font-[felix] text-4xl">
             Contact us now! <br />
             “We make it happen.”
           </h3>
           <Image
             src={"/images/bf logo.png"}
-            width={250}
-            height={250}
+            width={350}
+            height={350}
             alt="BF Logo"
           />
         </div>
@@ -71,8 +72,8 @@ export default function Footer() {
             </button>
           </div>
         </div>
-        <div className="relative">
-          <img src="/images/footer.png" alt="Footer" />
+        <div className="relative flex items-center justify-center w-full ">
+          <img src="/images/footer.png" alt="Footer" className="w-full mt-5" />
         </div>
       </div>
     </footer>
