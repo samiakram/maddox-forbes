@@ -20,23 +20,26 @@ import FormsTools from "./(Components)/FormsTools";
 
 export default function Home() {
   return (
-    <main className="">
-      <Landing />
-      <About />
-      <Standing />
-      <Employees />
-      <LoanProcess />
-      <Services />
-      <Residential />
-      <Investment />
-      <Commercial />
-      <USDA />
-      <CustomBuild />
-      {/* <DesignSpotlight /> */}
-      <BuilderByArea />
-      <BuilderOfMonth />
-      <FormsTools />
-      <Footer />
+    // <main className="">
+    //   <Landing />
+    //   <About />
+    //   <Standing />
+    //   <Employees />
+    //   <LoanProcess />
+    //   <Services />
+    //   <Residential />
+    //   <Investment />
+    //   <Commercial />
+    //   <USDA />
+    //   <CustomBuild />
+
+    //   <BuilderByArea />
+    //   <BuilderOfMonth />
+    //   <FormsTools />
+    //   <Footer />
+    // </main>
+    <main className="flex items-center justify-center text-3xl font-bold">
+      Deployment Paused. Contact Admin
     </main>
   );
 }
