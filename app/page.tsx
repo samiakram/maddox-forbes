@@ -38,7 +38,7 @@ export default function Home() {
     //   <FormsTools />
     //   <Footer />
     // </main>
-    <main className="flex items-center justify-center text-3xl font-bold">
+    <main className="flex h-screen items-center justify-center text-xl font-bold">
       Deployment Paused. Contact Admin
     </main>
   );
