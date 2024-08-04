@@ -68,14 +68,14 @@ const data = [
     image: "/images/TFK Executive Spotlight Photo.jpg",
     name: "Derek Michael Aron",
     title: "Senior Mortgage Advisor",
-    bio: "Born in Philadelphia and raised in the beautiful Delaware Valley, Derek spent a lot of his childhood traveling up and down the east coast playing competitive soccer. He has passed along this passion for soccer to his son. Derek. Along with his wife, they enjoy spending weekends traveling to matches all over the state and he has never missed a game! His dedication to his work is only surpassed by his dedication to his family.",
+    bio: "Born in Philadelphia and raised in the beautiful Delaware Valley, Derek spent a lot of his childhood traveling up and down the East Coast playing competitive soccer. He has passed along this passion for soccer to his son. Derek, Along with his wife, enjoy spending weekends traveling to matches all over the state and he has never missed a game! His dedication to his work is only surpassed by his dedication to his family.",
     reverse: false,
   },
   {
     image: "/images/TFK Executive Spotlight Photo.jpg",
     name: "Taylor Forbes Kiser",
     title: "Director of Business Development",
-    bio: "Taylor is a born and bred Tarheel native. Originally from Greensboro, she attended North Carolina State University, and afterwards lived for several years in Wilmington then Boone. This comprehensive knowledge of all major markets in the state uniquely positions her as a local expert, with access to top-tier investors on the national level. Having an educational background in Business Management, pursuing finance was a natural next step. She worked on the Chicago Mercantile Exchange, before also working in the family business of construction and development. Taylor’s why is her family and farm, which includes her three children, husband, and far too many animals. She is a momma bear for her kids, and one you want fighting in your financial corner.",
+    bio: "Taylor is a born and bred Tarheel native. Originally from Greensboro, she attended  North Carolina State University.  Afterwards, she moved to Wilmington for several years, followed by a relocation to Boone. This comprehensive knowledge of all major markets in the state uniquely positions her as a local expert, with access to top-tier investors at the national level. Having an educational background in Business Management, pursuing finance was a natural next step. She worked on the Chicago Mercantile Exchange prior to joining her family's construction and development business. Taylor's why is her family and farm, which includes her three children, husband, and far too many animals. She is a momma bear for her kids, and one you want fighting in your financial corner.",
     reverse: true,
   },
 ];

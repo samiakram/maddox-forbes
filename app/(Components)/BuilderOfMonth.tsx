@@ -59,13 +59,13 @@ export default function BuilderOfMonth() {
               </p>
             </SlidingInComponent>
             <SlidingInComponent delay={0.4} class="">
-              {/* <Image
+              <Image
                 src={"/images/kaufman.jpg"}
                 width={500}
                 height={500}
                 alt="Kaufman"
-              /> */}
-              <Carousel
+              />
+              {/* <Carousel
                 images={[
                   { url: "/images/kaufman.jpg", isImage: true, duration: 2000 },
                   {
@@ -84,7 +84,7 @@ export default function BuilderOfMonth() {
                     duration: 5000,
                   },
                 ]}
-              />
+              /> */}
             </SlidingInComponent>
           </div>
         </div>

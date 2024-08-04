@@ -18,7 +18,7 @@ export default function Investment() {
               involved in property return on investment, market analytics, and
               how that can impact the ultimate success of an investment. We have
               access to more lenders who specialize in this area of lending than
-              nearly any other lender in the county. Doing business with Maddox
+              nearly any other lender in the County. Doing business with Maddox
               Forbes guarantees you not only have access competitive pricing,
               but it also provides you with a massive number of investment
               options to suit your particular financial goals and build your
@@ -52,7 +52,8 @@ export default function Investment() {
                   {" "}
                   long-term partner
                 </span>{" "}
-                in growing and diversifying your investment portfolio.
+                in growing and diversifying your Real Estate investment
+                portfolio.
               </p>
               <p className="text-2xl font-[felix] mt-20">
                 Explore ways to earn more with diversified loan products that

@@ -1,4 +1,5 @@
 import SlidingInComponent from "./SlidingIn";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -34,7 +35,38 @@ export default function Services() {
                   <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
                 </a>
               </li>
+              <li>
+                <a href="" className="group relative flex gap-1">
+                  New Construction Land
+                  <span className="absolute border-t-2 border-b-primaryWhite w-0 group-hover:w-full bottom-0 left-0 transition-all duration-300 ease-in-out"></span>
+                </a>
+              </li>
             </ul>
+          </SlidingInComponent>
+          <SlidingInComponent delay={0.4} class="mt-10">
+            <div className="flex flex-col md:flex-row gap-8 items-end">
+              <Image
+                src={"/images/USDA Photo.jpg"}
+                width={400}
+                height={400}
+                alt="USDA Photo"
+                className="w-full"
+              />
+              <Image
+                src={"/images/services mid.jpg"}
+                width={400}
+                height={400}
+                alt="USDA Photo"
+                className="w-full"
+              />
+              <Image
+                src={"/images/farm2.jpg"}
+                width={400}
+                height={400}
+                alt="USDA Photo"
+                className="w-full"
+              />
+            </div>
           </SlidingInComponent>
         </div>
       </section>

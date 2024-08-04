@@ -17,29 +17,28 @@ import DesignSpotlight from "./(Components)/DesignSpotlight";
 import BuilderByArea from "./(Components)/BuilderByArea";
 import BuilderOfMonth from "./(Components)/BuilderOfMonth";
 import FormsTools from "./(Components)/FormsTools";
+import CustomizedLoanPrograms from "./(Components)/CustomizedLoanPrograms";
 
 export default function Home() {
   return (
-    // <main className="">
-    //   <Landing />
-    //   <About />
-    //   <Standing />
-    //   <Employees />
-    //   <LoanProcess />
-    //   <Services />
-    //   <Residential />
-    //   <Investment />
-    //   <Commercial />
-    //   <USDA />
-    //   <CustomBuild />
+    <main className="">
+      <Landing />
+      <About />
+      <Standing />
+      <Employees />
+      <LoanProcess />
+      <Services />
+      <CustomizedLoanPrograms />
+      {/* <Residential /> */}
+      {/* <Investment /> */}
+      {/* <Commercial /> */}
+      {/* <USDA /> */}
+      <CustomBuild />
 
-    //   <BuilderByArea />
-    //   <BuilderOfMonth />
-    //   <FormsTools />
-    //   <Footer />
-    // </main>
-    <main className="flex h-screen items-center justify-center text-xl font-bold">
-      Deployment Paused. Contact Admin
+      <BuilderByArea />
+      <BuilderOfMonth />
+      <FormsTools />
+      <Footer />
     </main>
   );
 }

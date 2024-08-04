@@ -20,7 +20,7 @@ export default function FormsTools() {
       link: "/loan-form",
     },
     {
-      name: "Construction Drawls ",
+      name: "Construction Draws ",
       link: "",
     },
     {

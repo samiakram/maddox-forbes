@@ -10,17 +10,18 @@ export default function About() {
         id="about"
       >
         <div className="container  mx-auto pt-20 flex flex-col items-center justify-center">
-          <SlidingInComponent delay={0} class="mb-10 ">
-            <h1 className="text-4xl tracking-wider ">About</h1>
+          <SlidingInComponent delay={0} class="mb-10 text-center">
+            <h1 className="text-4xl tracking-wider ">Maddox Forbes</h1>
+            <h1 className="text-2xl tracking-wider ">Premier Lending</h1>
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class="">
-            <p className="text-xl text-center">
+            <p className="text-3xl text-center">
               Welcome to Maddox Forbes your local Loan and investment financing
               experts
             </p>
           </SlidingInComponent>
           <SlidingInComponent delay={0.2} class="mt-4">
-            <p className="text-xl text-center">
+            <p className="text-2xl text-center">
               We pride ourselves in providing contemporary loan solutions for
               residential, investment, and commercial buyers by accessing the
               most comprehensive and competitive wholesale investors in the
@@ -40,7 +41,7 @@ export default function About() {
                   SET YOURSELF UP FOR SUCCESS <br />&<br /> SHOP WITH CONFIDENCE
                 </h5>
               </div>
-              <div className="w-2/3 border leading-relaxed text-2xl mt-8 flex flex-col gap-2 items-center justify-center text-left">
+              <div className="w-full  border leading-relaxed text-2xl mt-14 flex flex-col gap-2 items-center justify-center text-center">
                 <p>
                   Whether you are looking to buy your first home or expand your
                   real estate portfolio, our experts have decades of experience

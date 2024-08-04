@@ -16,7 +16,7 @@ export default function CustomBuild() {
           <SlidingInComponent delay={0.2} class="text-3xl text-center">
             <p>
               Maddox Forbes has partnered with elite custom builders statewide.
-              These thoroughly vetted builders&apos; range in expertise from
+              These thoroughly vetted builders range in expertise from
               stick-built homes to unique custom builds. To meet local demand,
               we also have builders in multiple areas who specialize in
               Bromoniums, large pole barns and majestic horse stables. Contact
@@ -28,8 +28,8 @@ export default function CustomBuild() {
             delay={0.4}
             class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 mt-10"
           >
-            <div className="text-5xl w-full flex mb-5 items-center justify-center text-center font-bold">
-              <p className="md:w-3/4 font-[felix]">
+            <div className="text-6xl w-full flex mb-5 items-center justify-center text-center font-bold">
+              <p className="leading-relaxed font-[felix]">
                 Create the home of your dreams from scratch!
               </p>
             </div>

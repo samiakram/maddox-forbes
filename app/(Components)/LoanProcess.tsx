@@ -17,7 +17,7 @@ export default function LoanProcess() {
               attention to detail at every step to ensure a loan experience
               surpassed by none. Clear, consistent, and concise communication
               ensures our buyers, agents, and partners have a smooth and timely
-              closing.
+              closing
             </p>
           </SlidingInComponent>
           <SlidingInComponent
@@ -25,7 +25,7 @@ export default function LoanProcess() {
             class="flex flex-col md:flex-row gap-4 md:gap-10  items-center justify-center my-5"
           >
             <div className="w-full h-full flex flex-col items-center justify-center ">
-              <h5 className="text-5xl md:text-5xl text-left ">
+              <h5 className="text-5xl md:text-5xl text-center ">
                 Understanding the Application & Preapproval Process
               </h5>
             </div>
@@ -53,6 +53,15 @@ export default function LoanProcess() {
                   reflected on the buyer&apos;s financial statements. This
                   validation ensures the figures we are prequalifying with are
                   correct and the amount we qualify a buyer for is accurate.
+                  <br />
+                  After obtaining and validating all documentation, we pull
+                  credit and run the completed application through Fannie Mae
+                  and Freddie Mac&apos;s automated underwriting system to verify
+                  the file is eligible for funding. After we have fully reviewed
+                  the file a final time, we reach out verbally to the borrower
+                  to review the loan program parameters before issuing both the
+                  buyer and agent an official pre-approval letter. This way, you
+                  and your agent can shop with confidence
                 </span>
               </SlidingInComponent>
             </li>
@@ -64,7 +73,7 @@ export default function LoanProcess() {
                 <span>
                   Once you find a house you love and have your offer accepted,
                   you&apos;ll be under contract. We move with urgency to ensure
-                  downtime is kept to a minimum. within 72 hours of receiving
+                  downtime is kept to a minimum. Within 72 hours of providing
                   your fully executed contract, you will receive your loan
                   estimate for review and acknowledgement. Once you acknowledge
                   the intent to proceed, your file will be moved into
@@ -91,8 +100,8 @@ export default function LoanProcess() {
                   4- Clear to close!{" "}
                 </span>
                 <span>
-                  Congratulations are in order because if you have reached this
-                  step then you are ready to close on your purchase!
+                  Congratulations are in order because, if you have reached this
+                  step, you are ready to close on your purchase!
                 </span>
               </SlidingInComponent>
             </li>

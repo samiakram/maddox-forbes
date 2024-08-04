@@ -4,7 +4,7 @@ export default function InquiryForm({ loan }: { loan: boolean }) {
   return (
     <>
       <h3 className="text-3xl">
-        {loan ? "Loan Inquiry Request Form" : "Builder Inquiry Request Form"}
+        {loan ? "Loan Inquiry Form" : "Builder Inquiry Form"}
       </h3>
       <a href={loan ? "/loan-form" : "/builder-form"}>
         <Image
